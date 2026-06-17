@@ -1,0 +1,28 @@
+# ProCloud (Versió en Català)
+
+> [!NOTE]
+> **Altres idiomes / Other languages**: [Español (Principal)](http://procloud.info/llms.txt) | [English](http://procloud.info/llms-en.txt)
+
+Solucions cloud, accés remot segur i suport IT per a empreses. ProCloud ajuda a pimes, despatxos, clíniques i empreses multiseu a treballar de forma segura des de qualsevol lloc.
+
+## Informació Clau
+
+* **Propòsit**: Proporcionar infraestructures híbrides, VPN, RDP protegit, Microsoft 365, Google Workspace, servidors cloud i publicació d'aplicacions empresarials.
+* **Públic Objectiu**: Pimes, despatxos professionals, clíniques mèdiques i empreses multiseu a Espanya.
+* **Tecnologies Clau**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+
+## Serveis Principals
+
+1. **VPN Empresarial**: Accés remot segur per a teletreball i connexió segura entre oficines.
+2. **Microsoft 365**: Integració i administració de Teams, SharePoint i Exchange Online.
+3. **Google Workspace**: Configuració i suport per a empreses i equips híbrids.
+4. **Cloud & ERPs**: Publicació al cloud o entorns híbrids d'aplicacions de gestió empresarial com Sage, SAP i A3.
+5. **Ciberseguretat i IT**: Còpies de seguretat (Backup), firewall, seguretat perimetral i suport tècnic especialitzat.
+
+## Estructura del Lloc
+
+* [Inici](http://procloud.info/) - Pàgina de presentació de solucions cloud, accés segur i suport IT.
+* [Acerca de](http://procloud.info/acerca-de/) - Qui som, valors i trajectòria de ProCloud.
+* [Ofertas](http://procloud.info/ofertas/) - Plans, promocions o serveis específics destacats.
+* [Blog](http://procloud.info/blog/) - Articles sobre tecnologia cloud, seguretat informàtica i productivitat.
+* [Contacto](http://procloud.info/contacto/) - Formulari de contacte i dades de suport per a clients.

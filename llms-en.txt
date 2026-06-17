@@ -1,0 +1,28 @@
+# ProCloud (English Version)
+
+> [!NOTE]
+> **Other languages**: [Español (Principal)](http://procloud.info/llms.txt) | [Català](http://procloud.info/llms-ca.txt)
+
+Cloud solutions, secure remote access, and IT support for businesses. ProCloud helps SMEs, law firms, clinics, and multi-site companies work securely from anywhere.
+
+## Key Information
+
+* **Purpose**: Provide hybrid infrastructures, VPNs, protected RDP, Microsoft 365, Google Workspace, cloud servers, and publishing of business applications.
+* **Target Audience**: SMEs, professional law/consultancy firms, medical clinics, and multi-site companies in Spain.
+* **Key Technologies**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+
+## Core Services
+
+1. **Enterprise VPN**: Secure remote access for teleworking and secure connection between office branch sites.
+2. **Microsoft 365**: Integration and management of Teams, SharePoint, and Exchange Online.
+3. **Google Workspace**: Setup and support for business and hybrid teams.
+4. **Cloud & ERPs**: Cloud or hybrid environment hosting of business management software like Sage, SAP, and A3.
+5. **Cybersecurity & IT**: Backups, firewalls, perimeter security, and specialized technical systems support.
+
+## Site Structure
+
+* [Home](http://procloud.info/) - Introduction page for cloud solutions, secure access, and IT support.
+* [About Us](http://procloud.info/acerca-de/) - Who we are, values, and ProCloud's track record.
+* [Offers](http://procloud.info/ofertas/) - Highlighted plans, promotions, or specific services.
+* [Blog](http://procloud.info/blog/) - Articles about cloud tech, computer security, and productivity.
+* [Contact](http://procloud.info/contacto/) - Contact form and customer support information.

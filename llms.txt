@@ -1,0 +1,28 @@
+# ProCloud
+
+> [!NOTE]
+> **Otros idiomas / Other languages**: [Català](http://procloud.info/llms-ca.txt) | [English](http://procloud.info/llms-en.txt)
+
+Soluciones cloud, acceso remoto seguro y soporte IT para empresas. ProCloud ayuda a pymes, despachos, clínicas y empresas multisede a trabajar de forma segura desde cualquier lugar.
+
+## Información Clave
+
+* **Propósito**: Proporcionar infraestructuras híbridas, VPN, RDP protegido, Microsoft 365, Google Workspace, servidores cloud y publicación de aplicaciones empresariales.
+* **Público Objetivo**: Pymes, despachos profesionales, clínicas médicas y empresas multisede en España.
+* **Tecnologías Clave**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+
+## Servicios Principales
+
+1. **VPN Empresarial**: Acceso remoto seguro para teletrabajo y conexión segura entre oficinas.
+2. **Microsoft 365**: Integración y administración de Teams, SharePoint y Exchange Online.
+3. **Google Workspace**: Configuración y soporte para empresas y equipos híbridos.
+4. **Cloud & ERPs**: Publicación en cloud o entornos híbridos de aplicaciones de gestión empresarial como Sage, SAP y A3.
+5. **Ciberseguridad e IT**: Copias de seguridad (Backup), firewall, seguridad perimetral y soporte técnico especializado.
+
+## Estructura del Sitio
+
+* [Inicio](http://procloud.info/) - Página de presentación de soluciones cloud, acceso seguro y soporte IT.
+* [Acerca de](http://procloud.info/acerca-de/) - Quiénes somos, valores y trayectoria de ProCloud.
+* [Ofertas](http://procloud.info/ofertas/) - Planes, promociones o servicios específicos destacados.
+* [Blog](http://procloud.info/blog/) - Artículos sobre tecnología cloud, seguridad informática y productividad.
+* [Contacto](http://procloud.info/contacto/) - Formulario de contacto y datos de soporte para clientes.
