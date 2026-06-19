@@ -145,7 +145,7 @@
 
                         <!-- CAPTCHA DE SEGURETAT -->
                         <div style="margin-bottom: 20px;">
-                            <div class="h-captcha" data-captcha="true"></div>
+                            <div class="h-captcha" data-captcha="true" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired"></div>
                         </div>
 
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -234,6 +234,56 @@
     </div>
 
     <!-- SCRIPT DE CAPTCHA Y SCRIPT PRINCIPAL -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const submitBtn = document.querySelector('.pc-contact-form button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.setAttribute('disabled', 'true');
+                submitBtn.style.opacity = '0.5';
+                submitBtn.style.cursor = 'not-allowed';
+            }
+            
+            const form = document.querySelector('.pc-contact-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // Honeypot check
+                    const botcheck = form.querySelector('input[name="botcheck"]');
+                    if (botcheck && botcheck.checked) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        return;
+                    }
+                    
+                    const hCaptchaResponse = form.querySelector('[name="h-captcha-response"]');
+                    if (!hCaptchaResponse || !hCaptchaResponse.value) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        alert("Si us plau, verifica que ets humà abans d’enviar el formulari.");
+                    }
+                }, true); // Capture phase to intercept before Web3Forms client script
+            }
+        });
+
+        // hCaptcha Callbacks
+        window.onCaptchaSuccess = function(token) {
+            const submitBtn = document.querySelector('.pc-contact-form button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.removeAttribute('disabled');
+                submitBtn.style.opacity = '1';
+                submitBtn.style.cursor = 'pointer';
+            }
+        };
+
+        window.onCaptchaExpired = function() {
+            const submitBtn = document.querySelector('.pc-contact-form button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.setAttribute('disabled', 'true');
+                submitBtn.style.opacity = '0.5';
+                submitBtn.style.cursor = 'not-allowed';
+            }
+        };
+    </script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="../assets/js/main.js"></script>
 </body>
