@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to secure RDP access to your business servers | ProCloud</title>
+  <meta name="description" content="Protect RDP access to your servers with Zero Trust, Cloudflare, MFA, business VPN and secure access policies.">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://procloud.info/en/blog/secure-rdp-access-servers.html">
+  <link rel="alternate" hreflang="es" href="https://procloud.info/blog/asegurar-acceso-rdp-servidores.html">
+  <link rel="alternate" hreflang="x-default" href="https://procloud.info/blog/asegurar-acceso-rdp-servidores.html">
+  <link rel="alternate" hreflang="ca" href="https://procloud.info/ca/blog/assegurar-acces-rdp-servidors.html">
+  <link rel="alternate" hreflang="en" href="https://procloud.info/en/blog/secure-rdp-access-servers.html">
+
+  <!-- FAVICONS -->
+  <link rel="icon" href="../../assets/images/cropped-procloud-icono-32x32.png" sizes="32x32">
+  <link rel="icon" href="../../assets/images/cropped-procloud-icono-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../../assets/images/cropped-procloud-icono-180x180.png">
+  
+  <!-- CSS PRINCIPAL -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procloud.info/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://procloud.info/en/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to secure RDP access to your business servers",
+          "item": "https://procloud.info/en/blog/secure-rdp-access-servers.html"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to secure RDP access to your business servers",
+      "description": "Protect RDP access to your servers with Zero Trust, Cloudflare, MFA, business VPN and secure access policies.",
+      "datePublished": "2026-06-10",
+      "dateModified": "2026-06-10",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://procloud.info/en/blog/secure-rdp-access-servers.html"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ProCloud",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png"
+        }
+      }
+    }
+  ]
+}
+  </script>
+
+</head>
+<body class="pc-page">
+
+  <!-- CABECERA -->
+  <header class="site-header" role="banner">
+    <div class="pc-container">
+      <a class="site-logo" href="../../en/index.html" aria-label="ProCloud">
+        <img src="../../assets/images/procloud-icon.png" alt="ProCloud" width="32" height="32">
+        <span>ProCloud</span>
+      </a>
+      
+      <nav class="main-navigation" id="main-navigation" role="navigation" aria-label="Navigation">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="../../en/index.html">Home</a></li>
+          <li><a href="../../en/cloud-services.html">Cloud Services</a></li>
+          <li><a href="../../en/cloud-erp.html">Cloud ERP</a></li>
+          <li><a class="active" href="../../en/blog.html">Blog</a></li>
+          <li><a href="../../en/about.html">About us</a></li>
+          <li><a href="../../en/contact.html">Contact</a></li>
+          
+          <li style="display: inline-flex; gap: 10px; margin-left: 10px; border-left: 1px solid rgba(255,255,255,0.25); padding-left: 15px;">
+            <a href="../../blog/asegurar-acceso-rdp-servidores.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">ES</a>
+            <a href="../../ca/blog/assegurar-acces-rdp-servidors.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">CA</a>
+            <span style="color: var(--pc-cyan); font-weight: 700; font-size: 14px;">EN</span>
+          </li>
+        </ul>
+      </nav>
+      
+      <a class="pc-btn header-btn" href="../../en/contact.html">Free quote</a>
+    </div>
+  </header>
+
+  <main id="primary" class="site-main">
+
+    <!-- HERO -->
+    <section class="pc-hero" aria-labelledby="post-title">
+      <div class="pc-container" style="max-width: 800px; text-align: center;">
+        <div class="pc-headerline" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: var(--pc-cyan); font-size: 14px;">Cybersecurity &bull; 10 Jun 2026</div>
+        <h1 id="post-title" style="font-size: 2.8rem; font-weight: 800; color: var(--pc-white); margin-top: 15px; line-height: 1.25;">How to secure RDP access to your business servers</h1>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <div class="pc-post-body" style="font-size: 18px; line-height: 1.8; color: var(--pc-navy);">
+          
+<p>Remote Desktop remains a key tool for many companies. It allows access to servers, management applications, work desktops, ERPs and internal environments from outside the office.</p>
+<p>But it is also one of the most targeted services when exposed incorrectly.</p>
+<p>Opening RDP directly to the Internet, using weak passwords or allowing access without multi-factor authentication can turn a server into an entry point for attacks, ransomware and credential theft.</p>
+<p>At ProCloud, we help companies protect remote access through secure architectures, especially with Cloudflare-based Zero Trust solutions.</p>
+
+<h2>Why RDP is a common target</h2>
+<p>RDP allows remote control of a computer or server. This makes it a very useful tool, but also an attractive target for attackers.</p>
+<p>Common risks include:</p>
+<ul>
+  <li>Brute-force attacks against users and passwords.</li>
+  <li>Unauthorized access from unknown locations.</li>
+  <li>Direct exposure of port 3389 to the Internet.</li>
+  <li>Lack of multi-factor authentication.</li>
+  <li>Servers without security updates.</li>
+  <li>Users with excessive permissions.</li>
+  <li>Shared accounts between several people.</li>
+</ul>
+<p>When an attacker gains RDP access, they can move inside the network, copy information, encrypt servers or stop critical services.</p>
+
+<h2>The solution is not just changing the port</h2>
+<p>Many companies try to protect RDP by changing the default port. While this may reduce very basic automated attacks, it is not enough.</p>
+<p>Secure remote access should rely on several layers:</p>
+<ul>
+  <li>Do not expose RDP directly to the Internet.</li>
+  <li>Validate the user’s identity.</li>
+  <li>Apply MFA.</li>
+  <li>Restrict access by user, group, device and location.</li>
+  <li>Log access attempts.</li>
+  <li>Segment the network.</li>
+  <li>Apply least-privilege policies.</li>
+</ul>
+<p>This is where the Zero Trust approach becomes important.</p>
+
+<h2>What Zero Trust means for RDP</h2>
+<p>Zero Trust means not automatically trusting any user, device or connection, even if it comes from inside the company.</p>
+<p>Instead of opening a public port and hoping that only the right users connect, every access request is validated before the connection is allowed.</p>
+<p>Applied to RDP, this means the server is not directly exposed to the Internet. The user must authenticate first, comply with defined policies and only then access the authorized resource.</p>
+
+<h2>ProCloud and Cloudflare Zero Trust</h2>
+<p>ProCloud specializes in Zero Trust architectures with Cloudflare to protect business remote access.</p>
+<p>We design solutions with Cloudflare Tunnel, Cloudflare Access and WARP so servers can be protected without publishing RDP directly to the Internet.</p>
+<p>This approach allows companies to:</p>
+<ul>
+  <li>Avoid direct exposure of the RDP port.</li>
+  <li>Publish internal applications in a controlled way.</li>
+  <li>Apply MFA before allowing access.</li>
+  <li>Define policies by user, group or domain.</li>
+  <li>Restrict access depending on device or location.</li>
+  <li>Record attempts and access events.</li>
+  <li>Enable remote work without opening the entire network.</li>
+</ul>
+
+<h2>Benefits of Cloudflare Tunnel</h2>
+<p>Cloudflare Tunnel connects internal services to Cloudflare without opening inbound ports on the firewall.</p>
+<p>This greatly reduces the attack surface because the server is not publicly visible.</p>
+<p>In a well-designed architecture, the user does not connect directly to the server from the Internet. They first go through Cloudflare, authenticate and only access what they are allowed to use.</p>
+
+<h2>MFA and access policies</h2>
+<p>Multi-factor authentication is essential to protect remote access.</p>
+<p>With Cloudflare Access, we can apply policies such as:</p>
+<ul>
+  <li>Authorized users only.</li>
+  <li>Access with MFA.</li>
+  <li>Corporate email restriction.</li>
+  <li>Group-based restriction.</li>
+  <li>Country or location restriction.</li>
+  <li>Device checks.</li>
+  <li>Temporary or conditional access.</li>
+</ul>
+<p>This allows security to be adapted to the real needs of each company.</p>
+
+<h2>RDP Gateway, VPN or Zero Trust</h2>
+<p>There is not always a single valid solution. Depending on the environment, a business VPN, RDP Gateway, Zero Trust architecture or a combination of several technologies may be appropriate.</p>
+<p>The key is to analyze:</p>
+<ul>
+  <li>Number of remote users.</li>
+  <li>Applications they need to use.</li>
+  <li>Required security level.</li>
+  <li>Current infrastructure.</li>
+  <li>Internal servers.</li>
+  <li>Audit requirements.</li>
+  <li>Type of devices used.</li>
+</ul>
+<p>At ProCloud, we analyze each case and design the most suitable architecture.</p>
+
+<h2>Basic best practices</h2>
+<p>In addition to protecting remote access, we recommend:</p>
+<ul>
+  <li>Disabling unused users.</li>
+  <li>Applying strong passwords.</li>
+  <li>Enabling MFA whenever possible.</li>
+  <li>Keeping servers updated.</li>
+  <li>Reviewing administrator permissions.</li>
+  <li>Using external and immutable backups.</li>
+  <li>Monitoring suspicious access.</li>
+  <li>Separating normal users from administrator accounts.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Remote access is essential for many companies, but it must be properly protected.</p>
+<p>Publishing RDP directly to the Internet is no longer a recommended option. Companies need modern, secure and controlled solutions.</p>
+<p>At ProCloud, we help protect remote access with Zero Trust, Cloudflare, business VPN, MFA and architectures adapted to each environment.</p>
+
+        </div>
+        
+        <!-- ENLACES RELACIONADOS -->
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--pc-mid);">
+          <h4 style="color: var(--pc-navy); font-size: 20px; font-weight: 700; margin-bottom: 20px;">Related links:</h4>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                      <li><a href="../vpn-remote-work.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">VPN and remote work &rarr;</a></li>
+          <li><a href="../backup-cybersecurity.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Backup and cybersecurity &rarr;</a></li>
+          <li><a href="../cloud-services.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Cloud services &rarr;</a></li>
+          <li><a href="../contact.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Contact &rarr;</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="pc-section pc-section-light" aria-labelledby="cta-title">
+      <div class="pc-container">
+        <div class="pc-cta pc-cta-grid">
+          <div>
+            <h2 id="cta-title">Need to secure remote access?</h2>
+            <p style="margin-bottom: 24px; color: var(--pc-muted); font-size: 16px;">Contact us and we will review how to protect remote access to your servers.</p>
+            <a class="pc-btn pc-btn-primary" href="../../en/contact.html">Contact us</a>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <img src="../../assets/images/contact-it-modernization.png" alt="IT Modernization" class="pc-cta-illustration" loading="lazy" width="300" height="200">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="pc-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-logo" href="../../en/index.html">
+            <img src="../../assets/images/procloud-icon.png" alt="ProCloud" width="32" height="32" loading="lazy">
+            <span>ProCloud</span>
+          </a>
+          <p>Cloud solutions, secure remote access and IT support for SMEs and professional practices.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="../../en/cloud-erp.html">Cloud ERP</a></li>
+            <li><a href="../../en/cloud-services.html">Cloud Services</a></li>
+            <li><a href="../../en/cloud-services.html">IT Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../en/about.html">About us</a></li>
+            <li><a href="../../en/blog.html">Blog</a></li>
+            <li><a href="../../en/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Email: info@procloud.info</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ProCloud. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="ast-scroll-top" class="ast-scroll-top-icon" role="button" aria-label="Scroll Top" tabindex="0">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </div>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

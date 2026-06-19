@@ -1,10 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
+  <title>Blog de Tecnología Cloud, Ciberseguridad y Soporte | ProCloud</title>
+  <meta name="description" content="Artículos y guías de tecnología para pymes: teletrabajo seguro, migración de servidores locales a la nube, y automatización con IA.">
+  <link rel="canonical" href="https://procloud.info/blog.html">
+  <link rel="alternate" hreflang="es" href="https://procloud.info/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://procloud.info/blog.html">
+  <link rel="alternate" hreflang="ca" href="https://procloud.info/ca/blog.html">
+  <link rel="alternate" hreflang="en" href="https://procloud.info/en/blog.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://procloud.info/blog.html"
+          }
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "ES"
+        },
+        "url": "https://procloud.info/blog.html"
+      }
+    ]
+  }
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog de Tecnología y Ciberseguridad | ProCloud</title>
-  <meta name="description" content="Artículos, guías y novedades sobre tecnología cloud, acceso remoto seguro, Microsoft 365 y ciberseguridad para pymes.">
+  
+  
   <meta name="robots" content="index, follow">
   
   <!-- FAVICONS -->
@@ -16,23 +70,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   
   <!-- ESTRUCTURA DE DATOS JSON-LD (Schema Blog) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Blog de ProCloud",
-    "description": "Noticias, guías y consejos de ciberseguridad, nube y soporte IT para pymes y profesionales en España.",
-    "url": "https://procloud.info/blog.html",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ProCloud",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://procloud.info/assets/images/procloud-icon.png"
-      }
-    }
-  }
-  </script>
+  
 </head>
 <body class="pc-page">
 
@@ -42,8 +80,8 @@
   <header class="site-header" role="banner">
     <div class="pc-container">
       <a class="site-logo" href="index.html" aria-label="Inicio ProCloud">
-        <img src="./assets/images/cropped-procloud-icono-32x32.png" alt="Logotipo ProCloud" width="32" height="32">
-        <span>procloud.info</span>
+        <img src="assets/images/procloud-icon.png" alt="Logotipo ProCloud" width="32" height="32">
+        <span>ProCloud</span>
       </a>
       
       <nav class="main-navigation" id="main-navigation" role="navigation" aria-label="Navegación principal">
@@ -55,10 +93,15 @@
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios-cloud.html">Servicios Cloud</a></li>
-          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="erp-en-la-nube.html">ERP en la nube</a></li>
           <li><a class="active" href="blog.html">Blog</a></li>
           <li><a href="acerca-de.html">Acerca de</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li style="display: inline-flex; gap: 10px; margin-left: 10px; border-left: 1px solid rgba(255,255,255,0.25); padding-left: 15px;">
+            <span style="color: var(--pc-cyan); font-weight: 700; font-size: 14px;">ES</span>
+            <a href="ca/blog.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">CA</a>
+            <a href="en/blog.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">EN</a>
+          </li>
         </ul>
       </nav>
       
@@ -94,7 +137,7 @@
             <div class="post-body">
               <h3>Cómo asegurar el acceso RDP a tus servidores empresariales</h3>
               <p>El escritorio remoto (RDP) es una de las herramientas de teletrabajo más atacadas. Te explicamos cómo proteger tus accesos utilizando VPN empresariales, pasarelas RDP Gateway y políticas de doble factor (MFA).</p>
-              <a href="#" class="read-more-link" aria-label="Leer más sobre cómo asegurar el acceso RDP">Leer más &rarr;</a>
+              <a href="blog/asegurar-acceso-rdp-servidores.html" class="read-more-link" aria-label="Leer más sobre cómo asegurar el acceso RDP">Leer más &rarr;</a>
             </div>
           </article>
 
@@ -107,7 +150,7 @@
             <div class="post-body">
               <h3>Microsoft 365 para despachos: Teams, SharePoint e Exchange</h3>
               <p>Descubre cómo la migración al entorno de Microsoft 365 puede centralizar el correo de tu asesoría, unificar el almacenamiento de expedientes con SharePoint y mejorar la colaboración con Microsoft Teams.</p>
-              <a href="#" class="read-more-link" aria-label="Leer más sobre Microsoft 365 para despachos">Leer más &rarr;</a>
+              <a href="blog/microsoft-365-despachos-teams-sharepoint-exchange.html" class="read-more-link" aria-label="Leer más sobre Microsoft 365 para despachos">Leer más &rarr;</a>
             </div>
           </article>
 
@@ -120,7 +163,7 @@
             <div class="post-body">
               <h3>La importancia de la copia inmutable contra el Ransomware</h3>
               <p>Los ciberdelincuentes ahora intentan borrar las copias de seguridad locales antes de cifrar los servidores. Te enseñamos cómo la tecnología de Veeam Cloud Backup crea copias inmutables que no se pueden modificar.</p>
-              <a href="#" class="read-more-link" aria-label="Leer más sobre copias inmutables contra el Ransomware">Leer más &rarr;</a>
+              <a href="blog/copia-inmutable-ransomware.html" class="read-more-link" aria-label="Leer más sobre copias inmutables contra el Ransomware">Leer más &rarr;</a>
             </div>
           </article>
           
@@ -136,7 +179,7 @@
             <h2 id="blog-cta-title">¿Quieres estar al día de la seguridad IT?</h2>
             <p>Escríbenos si tienes dudas técnicas o necesitas auditar la vulnerabilidad de tus accesos remotos actuales.</p>
           </div>
-          <a class="pc-btn pc-btn-primary" href="contacto.html">Contactar con ProCloud</a>
+          <a class="pc-btn pc-btn-primary" href="contacto.html">Contacta con nosotros</a>
         </div>
       </div>
     </section>
@@ -151,7 +194,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a class="footer-logo" href="index.html">
-            <img src="./assets/images/cropped-procloud-icono-32x32.png" alt="Logotipo ProCloud" width="32" height="32" loading="lazy">
+            <img src="assets/images/procloud-icon.png" alt="Logotipo ProCloud" width="32" height="32" loading="lazy">
             <span>ProCloud</span>
           </a>
           <p>Soluciones cloud, acceso remoto seguro y soporte IT para pymes y profesionales en España.</p>
@@ -172,15 +215,13 @@
           <ul>
             <li><a href="acerca-de.html">Acerca de</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="ofertas.html">Planes y Ofertas</a></li>
+            <li><a href="erp-en-la-nube.html">ERP en la nube</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
-          <p><strong>Tel:</strong> +34 900 000 000</p>
-          <p><strong>Email:</strong> info@procloud.info</p>
-          <p>Soporte técnico directo atendido por ingenieros de sistemas certificados.</p>
+          <p>Email: info@procloud.info</p>
         </div>
       </div>
       
@@ -207,3 +248,6 @@
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
+
+
+

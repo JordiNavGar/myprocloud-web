@@ -1,7 +1,7 @@
 # ProCloud
 
 > [!NOTE]
-> **Otros idiomas / Other languages**: [Català](http://procloud.info/llms-ca.txt) | [English](http://procloud.info/llms-en.txt)
+> **Otros idiomas / Other languages**: [Català](https://procloud.info/llms-ca.txt) | [English](https://procloud.info/llms-en.txt)
 
 Soluciones cloud, acceso remoto seguro y soporte IT para empresas. ProCloud ayuda a pymes, despachos, clínicas y empresas multisede a trabajar de forma segura desde cualquier lugar.
 
@@ -9,20 +9,37 @@ Soluciones cloud, acceso remoto seguro y soporte IT para empresas. ProCloud ayud
 
 * **Propósito**: Proporcionar infraestructuras híbridas, VPN, RDP protegido, Microsoft 365, Google Workspace, servidores cloud y publicación de aplicaciones empresariales.
 * **Público Objetivo**: Pymes, despachos profesionales, clínicas médicas y empresas multisede en España.
-* **Tecnologías Clave**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+* **Tecnologías Clave**: ERP en la nube, Sage, SAP, A3, IA aplicada a procesos, automatización, Cloud, VPN, RDP protegido, Microsoft 365, Google Workspace.
+
+## Servicio Destacado: ERP en la nube
+
+El servicio principal destacado de ProCloud es la publicación de aplicaciones ERP en la nube, especialmente Sage, SAP y A3.
+
+ProCloud permite a empresas y despachos trabajar con su ERP desde cualquier lugar, sin depender de un servidor físico en la oficina. El servicio incluye entorno cloud seguro, acceso remoto protegido, soporte técnico, mantenimiento, copias de seguridad y una cuota mensual clara.
+
+Este servicio está pensado para empresas que utilizan Sage, SAP o A3 y quieren modernizar su infraestructura, mejorar la seguridad, facilitar el teletrabajo y reducir costes técnicos.
+
+## Servicio Destacado: IA aplicada a procesos diarios
+
+ProCloud ofrece consultoría de inteligencia artificial aplicada al día a día de la empresa.
+
+Analizamos tareas repetitivas y flujos de trabajo para aplicar la IA donde realmente aporta valor: automatización, resúmenes, documentos, correos, informes, atención al cliente, organización interna y soporte a la toma de decisiones.
+
+Este servicio está pensado para empresas que quieren empezar a usar la IA de forma práctica, segura y útil, sin complicaciones técnicas y enfocándose en mejorar la productividad real del equipo.
 
 ## Servicios Principales
 
-1. **VPN Empresarial**: Acceso remoto seguro para teletrabajo y conexión segura entre oficinas.
-2. **Microsoft 365**: Integración y administración de Teams, SharePoint y Exchange Online.
-3. **Google Workspace**: Configuración y soporte para empresas y equipos híbridos.
-4. **Cloud & ERPs**: Publicación en cloud o entornos híbridos de aplicaciones de gestión empresarial como Sage, SAP y A3.
-5. **Ciberseguridad e IT**: Copias de seguridad (Backup), firewall, seguridad perimetral y soporte técnico especializado.
+1. **ERP en la nube (Sage, SAP y A3)**: Publicación de aplicaciones de gestión empresarial en un entorno cloud seguro, accesible desde cualquier lugar y con soporte técnico.
+2. **IA aplicada a procesos diarios**: Consultoría para analizar tareas repetitivas y flujos de trabajo, aplicando IA en automatización, resúmenes, documentos, correos, informes y organización interna.
+3. **VPN Empresarial**: Acceso remoto seguro para teletrabajo y conexión segura entre oficinas.
+4. **Microsoft 365**: Integración y administración de Teams, SharePoint y Exchange Online.
+5. **Google Workspace**: Configuración y soporte para empresas y equipos híbridos.
+6. **Ciberseguridad e IT**: Copias de seguridad, firewall, seguridad perimetral y soporte técnico especializado.
 
 ## Estructura del Sitio
 
-* [Inicio](http://procloud.info/) - Página de presentación de soluciones cloud, acceso seguro y soporte IT.
-* [Acerca de](http://procloud.info/acerca-de/) - Quiénes somos, valores y trayectoria de ProCloud.
-* [Ofertas](http://procloud.info/ofertas/) - Planes, promociones o servicios específicos destacados.
-* [Blog](http://procloud.info/blog/) - Artículos sobre tecnología cloud, seguridad informática y productividad.
-* [Contacto](http://procloud.info/contacto/) - Formulario de contacto y datos de soporte para clientes.
+* [Inicio](https://procloud.info/index.html) - Página de presentación de soluciones cloud, acceso seguro y soporte IT.
+* [Acerca de](https://procloud.info/acerca-de.html) - Quiénes somos, valores y trayectoria de ProCloud.
+* [ERP en la nube](https://procloud.info/erp-en-la-nube.html) - Publicación de Sage, SAP y A3 en cloud, seguridad y soporte.
+* [Blog](https://procloud.info/blog.html) - Artículos sobre tecnología cloud, seguridad informática y productividad.
+* [Contacto](https://procloud.info/contacto.html) - Formulario de contacto y datos de soporte para clientes.

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Com assegurar l’accés RDP als teus servidors empresarials | ProCloud</title>
+  <meta name="description" content="Protegeix l’accés RDP als teus servidors amb Zero Trust, Cloudflare, MFA, VPN empresarial i polítiques d’accés segures.">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://procloud.info/ca/blog/assegurar-acces-rdp-servidors.html">
+  <link rel="alternate" hreflang="es" href="https://procloud.info/blog/asegurar-acceso-rdp-servidores.html">
+  <link rel="alternate" hreflang="x-default" href="https://procloud.info/blog/asegurar-acceso-rdp-servidores.html">
+  <link rel="alternate" hreflang="ca" href="https://procloud.info/ca/blog/assegurar-acces-rdp-servidors.html">
+  <link rel="alternate" hreflang="en" href="https://procloud.info/en/blog/secure-rdp-access-servers.html">
+
+  <!-- FAVICONS -->
+  <link rel="icon" href="../../assets/images/cropped-procloud-icono-32x32.png" sizes="32x32">
+  <link rel="icon" href="../../assets/images/cropped-procloud-icono-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../../assets/images/cropped-procloud-icono-180x180.png">
+  
+  <!-- CSS PRINCIPAL -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://procloud.info/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://procloud.info/ca/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Com assegurar l’accés RDP als teus servidors empresarials",
+          "item": "https://procloud.info/ca/blog/assegurar-acces-rdp-servidors.html"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Com assegurar l’accés RDP als teus servidors empresarials",
+      "description": "Protegeix l’accés RDP als teus servidors amb Zero Trust, Cloudflare, MFA, VPN empresarial i polítiques d’accés segures.",
+      "datePublished": "2026-06-10",
+      "dateModified": "2026-06-10",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://procloud.info/ca/blog/assegurar-acces-rdp-servidors.html"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ProCloud",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png"
+        }
+      }
+    }
+  ]
+}
+  </script>
+
+</head>
+<body class="pc-page">
+
+  <!-- CABECERA -->
+  <header class="site-header" role="banner">
+    <div class="pc-container">
+      <a class="site-logo" href="../../ca/index.html" aria-label="ProCloud">
+        <img src="../../assets/images/procloud-icon.png" alt="ProCloud" width="32" height="32">
+        <span>ProCloud</span>
+      </a>
+      
+      <nav class="main-navigation" id="main-navigation" role="navigation" aria-label="Navigation">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="../../ca/index.html">Inici</a></li>
+          <li><a href="../../ca/serveis-cloud.html">Serveis Cloud</a></li>
+          <li><a href="../../ca/erp-al-nuvol.html">ERP al núvol</a></li>
+          <li><a class="active" href="../../ca/blog.html">Blog</a></li>
+          <li><a href="../../ca/qui-som.html">Qui som</a></li>
+          <li><a href="../../ca/contacte.html">Contacte</a></li>
+          
+          <li style="display: inline-flex; gap: 10px; margin-left: 10px; border-left: 1px solid rgba(255,255,255,0.25); padding-left: 15px;">
+            <a href="../../blog/asegurar-acceso-rdp-servidores.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">ES</a>
+            <span style="color: var(--pc-cyan); font-weight: 700; font-size: 14px;">CA</span>
+            <a href="../../en/blog/secure-rdp-access-servers.html" style="color: rgba(255,255,255,0.85); font-weight: 600; font-size: 14px;">EN</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <a class="pc-btn header-btn" href="../../ca/contacte.html">Pressupost gratuït</a>
+    </div>
+  </header>
+
+  <main id="primary" class="site-main">
+
+    <!-- HERO -->
+    <section class="pc-hero" aria-labelledby="post-title">
+      <div class="pc-container" style="max-width: 800px; text-align: center;">
+        <div class="pc-headerline" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: var(--pc-cyan); font-size: 14px;">Ciberseguretat &bull; 10 Jun 2026</div>
+        <h1 id="post-title" style="font-size: 2.8rem; font-weight: 800; color: var(--pc-white); margin-top: 15px; line-height: 1.25;">Com assegurar l’accés RDP als teus servidors empresarials</h1>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <div class="pc-post-body" style="font-size: 18px; line-height: 1.8; color: var(--pc-navy);">
+          
+<p>L’escriptori remot continua sent una eina fonamental per a moltes empreses. Permet accedir a servidors, aplicacions de gestió, escriptoris de treball, ERPs i entorns interns des de fora de l’oficina.</p>
+<p>Però també és un dels punts més atacats quan s’exposa de manera incorrecta.</p>
+<p>Obrir el port RDP directament a Internet, utilitzar contrasenyes febles o permetre accessos sense doble factor pot convertir el servidor en una porta d’entrada per a atacs, ransomware i robatori de credencials.</p>
+<p>A ProCloud ajudem les empreses a protegir els seus accessos remots mitjançant arquitectures segures, especialment amb solucions Zero Trust basades en Cloudflare.</p>
+
+<h2>Per què RDP és un objectiu habitual</h2>
+<p>RDP permet controlar un equip o servidor de forma remota. Això el converteix en una eina molt útil, pero també en un objectiu atractiu per als atacants.</p>
+<p>Els riscos més habituals són:</p>
+<ul>
+  <li>Atacs de força bruta contra usuaris i contrasenyes.</li>
+  <li>Accessos no autoritzats des d’ubicacions desconegudes.</li>
+  <li>Exposició directa del port 3389 a Internet.</li>
+  <li>Falta de doble factor d’autenticació.</li>
+  <li>Equips sense actualitzacions de seguretat.</li>
+  <li>Usuaris amb permisos excessius.</li>
+  <li>Ús compartit de comptes entre diverses persones.</li>
+</ul>
+<p>Quan un accés RDP rep un atac reeixit, l'atacant pot moure’s dins de la xarxa, copiar informació, xifrar servidors o aturar serveis crítics.</p>
+
+<h2>La solució no és només canviar el port</h2>
+<p>Moltes empreses intenten protegir RDP canviant el port per defecte. Tot i que pot reduir atacs automatitzats molt bàsics, no és una mesura suficient.</p>
+<p>Un accés remot segur s’ha de basar en diverses capes:</p>
+<ul>
+  <li>No exposar RDP directament a Internet.</li>
+  <li>Validar la identitat de l’usuari.</li>
+  <li>Aplicar MFA.</li>
+  <li>Restringir accessos per usuari, grup, dispositiu i ubicació.</li>
+  <li>Registrar els accessos.</li>
+  <li>Segmentar la xarxa.</li>
+  <li>Aplicar polítiques de mínim privilegi.</li>
+</ul>
+<p>Aquí és on entra l’enfocament Zero Trust.</p>
+
+<h2>Què és Zero Trust aplicat a RDP</h2>
+<p>Zero Trust significa no confiar automàticament en cap usuari, dispositiu o connexió, encara que vingui de dins de l’empresa.</p>
+<p>En lloc d’obrir un port públic i esperar que només hi entrin els usuaris correctes, es valida cada accés abans de permetre la connexió.</p>
+<p>Aplicat a RDP, això significa que el servidor no queda exposat directament a Internet. L’usuari s’ha d’autenticar prèviament, complir les polítiques definides i només llavors pot accedir al recurs autoritzat.</p>
+
+<h2>ProCloud i Cloudflare Zero Trust</h2>
+<p>A ProCloud som especialistes en arquitectures Zero Trust amb Cloudflare per protegir accessos remots empresarials.</p>
+<p>Dissenyem solucions amb Cloudflare Tunnel, Cloudflare Access i WARP perquè els servidors puguin estar protegits sense publicar RDP directament a Internet.</p>
+<p>Aquest enfocament permet:</p>
+<ul>
+  <li>Evitar l’exposició directa del port RDP.</li>
+  <li>Publicar aplicacions internes de forma controlada.</li>
+  <li>Aplicar MFA abans de permetre l’accés.</li>
+  <li>Definir polítiques per usuari, grup o domini.</li>
+  <li>Restringir l’accés segons dispositiu o ubicació.</li>
+  <li>Registrar intents i accessos.</li>
+  <li>Facilitar el teletreball sense obrir tota la xarxa.</li>
+</ul>
+
+<h2>Avantatges d’utilitzar Cloudflare Tunnel</h2>
+<p>Cloudflare Tunnel permet connectar serveis interns amb Cloudflare sense obrir ports entrants al firewall.</p>
+<p>Això redueix molt la superfície d’atac, perquè el servidor no queda visible públicament.</p>
+<p>En una arquitectura ben dissenyada, l’usuari no es connecta directament al servidor des d’Internet. Primer passa per Cloudflare, s’autentica i només accedeix al que té permès.</p>
+
+<h2>MFA i polítiques d’accés</h2>
+<p>L’autenticació multifactor és una mesura imprescindible per protegir accessos remots.</p>
+<p>Amb Cloudflare Access podem aplicar polítiques com:</p>
+<ul>
+  <li>Només usuaris autoritzats.</li>
+  <li>Accés amb doble factor.</li>
+  <li>Restricció per correu corporatiu.</li>
+  <li>Restricció per grup.</li>
+  <li>Restricció per país o ubicació.</li>
+  <li>Comprovació del dispositiu.</li>
+  <li>Accessos temporals o condicionats.</li>
+</ul>
+<p>Això permet adaptar la seguretat al funcionament real de cada empresa.</p>
+
+<h2>RDP Gateway, VPN o Zero Trust</h2>
+<p>No sempre hi ha una única solució vàlida. Segons l’entorn, pot interessar una VPN empresarial, un RDP Gateway, una arquitectura Zero Trust o una combinació de diverses tecnologies.</p>
+<p>La clau és analitzar:</p>
+<ul>
+  <li>Nombre d’usuaris remots.</li>
+  <li>Aplicacions que necessiten utilitzar.</li>
+  <li>Nivell de seguretat requerit.</li>
+  <li>Infraestructura actual.</li>
+  <li>Servidors interns.</li>
+  <li>Necessitat d’auditoria.</li>
+  <li>Tipus de dispositius utilitzats.</li>
+</ul>
+<p>A ProCloud analitzem cada cas i dissenyem l’arquitectura més adequada.</p>
+
+<h2>Bones pràctiques bàsiques</h2>
+<p>A més de protegir l’accés remot, recomanem aplicar mesures com:</p>
+<ul>
+  <li>Desactivar usuaris que ja no s’utilitzen.</li>
+  <li>Aplicar contrasenyes robustes.</li>
+  <li>Activar MFA sempre que sigui possible.</li>
+  <li>Mantenir servidors actualitzats.</li>
+  <li>Revisar permisos d’administrador.</li>
+  <li>Utilitzar còpies de seguretat externes i immutables.</li>
+  <li>Monitoritzar accessos sospitosos.</li>
+  <li>Separar usuaris normals de comptes administratius.</li>
+</ul>
+
+<h2>Conclusió</h2>
+<p>L’accés remot és imprescindible per a moltes empreses, però ha d’estar ben protegit.</p>
+<p>Publicar RDP directament a Internet ja no és una opció recomanable. Les empreses necessiten solucions modernes, segures i controlades.</p>
+<p>A ProCloud ajudem a protegir accessos remots amb solucions Zero Trust, Cloudflare, VPN empresarial, MFA i arquitectures adaptades a cada entorn.</p>
+
+        </div>
+        
+        <!-- ENLACES RELACIONADOS -->
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--pc-mid);">
+          <h4 style="color: var(--pc-navy); font-size: 20px; font-weight: 700; margin-bottom: 20px;">Enllaços relacionats:</h4>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                      <li><a href="../vpn-teletreball.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">VPN i teletreball &rarr;</a></li>
+          <li><a href="../backup-ciberseguretat.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Backup i ciberseguretat &rarr;</a></li>
+          <li><a href="../serveis-cloud.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Serveis Cloud &rarr;</a></li>
+          <li><a href="../contacte.html" class="read-more-link" style="font-weight: 600; font-size: 16px;">Contacte &rarr;</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="pc-section pc-section-light" aria-labelledby="cta-title">
+      <div class="pc-container">
+        <div class="pc-cta pc-cta-grid">
+          <div>
+            <h2 id="cta-title">Necessites protegir l'accés remot?</h2>
+            <p style="margin-bottom: 24px; color: var(--pc-muted); font-size: 16px;">Contacta amb nosaltres i revisem com protegir l’accés remot als teus servidors.</p>
+            <a class="pc-btn pc-btn-primary" href="../../ca/contacte.html">Contacta ara</a>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <img src="../../assets/images/contact-it-modernization.png" alt="IT Modernization" class="pc-cta-illustration" loading="lazy" width="300" height="200">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="pc-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-logo" href="../../ca/index.html">
+            <img src="../../assets/images/procloud-icon.png" alt="ProCloud" width="32" height="32" loading="lazy">
+            <span>ProCloud</span>
+          </a>
+          <p>Solucions cloud, accés remot segur i suport IT per a pimes i professionals.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Serveis</h4>
+          <ul>
+            <li><a href="../../ca/erp-al-nuvol.html">ERP al núvol</a></li>
+            <li><a href="../../ca/serveis-cloud.html">Serveis Cloud</a></li>
+            <li><a href="../../ca/serveis-cloud.html">Suport IT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="../../ca/qui-som.html">Qui som</a></li>
+            <li><a href="../../ca/blog.html">Blog</a></li>
+            <li><a href="../../ca/contacte.html">Contacte</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacte</h4>
+          <p>Email: info@procloud.info</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ProCloud. Tots els drets reservats.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="ast-scroll-top" class="ast-scroll-top-icon" role="button" aria-label="Scroll Top" tabindex="0">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </div>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

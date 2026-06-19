@@ -1,7 +1,7 @@
 # ProCloud (English Version)
 
 > [!NOTE]
-> **Other languages**: [Español (Principal)](http://procloud.info/llms.txt) | [Català](http://procloud.info/llms-ca.txt)
+> **Other languages**: [Español (Principal)](https://procloud.info/llms.txt) | [Català](https://procloud.info/llms-ca.txt)
 
 Cloud solutions, secure remote access, and IT support for businesses. ProCloud helps SMEs, law firms, clinics, and multi-site companies work securely from anywhere.
 
@@ -9,20 +9,37 @@ Cloud solutions, secure remote access, and IT support for businesses. ProCloud h
 
 * **Purpose**: Provide hybrid infrastructures, VPNs, protected RDP, Microsoft 365, Google Workspace, cloud servers, and publishing of business applications.
 * **Target Audience**: SMEs, professional law/consultancy firms, medical clinics, and multi-site companies in Spain.
-* **Key Technologies**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+* **Key Technologies**: Cloud ERP, Sage, SAP, A3, AI applied to business processes, automation, Cloud, VPN, protected RDP, Microsoft 365, Google Workspace.
+
+## Featured Service: Cloud ERP
+
+ProCloud’s main highlighted service is cloud publishing for ERP applications, especially Sage, SAP and A3.
+
+ProCloud allows companies and professional firms to work with their ERP from anywhere, without depending on a physical server in the office. The service includes a secure cloud environment, protected remote access, technical support, maintenance, backups and a clear monthly fee.
+
+This service is designed for companies using Sage, SAP or A3 that want to modernize their infrastructure, improve security, enable remote work and reduce technical overhead.
+
+## Featured Service: AI Applied to Daily Processes
+
+ProCloud offers artificial intelligence consulting applied to the daily work of the company.
+
+We analyze repetitive tasks and workflows to apply AI where it truly adds value: automation, summaries, documents, emails, reports, customer service, internal organization and decision-support processes.
+
+This service is designed for companies that want to start using AI in a practical, safe and useful way, without technical complexity and focused on improving the real productivity of their team.
 
 ## Core Services
 
-1. **Enterprise VPN**: Secure remote access for teleworking and secure connection between office branch sites.
-2. **Microsoft 365**: Integration and management of Teams, SharePoint, and Exchange Online.
-3. **Google Workspace**: Setup and support for business and hybrid teams.
-4. **Cloud & ERPs**: Cloud or hybrid environment hosting of business management software like Sage, SAP, and A3.
-5. **Cybersecurity & IT**: Backups, firewalls, perimeter security, and specialized technical systems support.
+1. **Cloud ERP (Sage, SAP and A3)**: Publishing business management applications in a secure cloud environment, accessible from anywhere and with technical support.
+2. **AI Applied to Daily Processes**: Consulting to analyze repetitive tasks and workflows, applying AI to automation, summaries, documents, emails, reports and internal organization.
+3. **Enterprise VPN**: Secure remote access for teleworking and secure connection between office branch sites.
+4. **Microsoft 365**: Integration and management of Teams, SharePoint and Exchange Online.
+5. **Google Workspace**: Setup and support for business and hybrid teams.
+6. **Cybersecurity & IT**: Backups, firewalls, perimeter security and specialized technical support.
 
 ## Site Structure
 
-* [Home](http://procloud.info/) - Introduction page for cloud solutions, secure access, and IT support.
-* [About Us](http://procloud.info/acerca-de/) - Who we are, values, and ProCloud's track record.
-* [Offers](http://procloud.info/ofertas/) - Highlighted plans, promotions, or specific services.
-* [Blog](http://procloud.info/blog/) - Articles about cloud tech, computer security, and productivity.
-* [Contact](http://procloud.info/contacto/) - Contact form and customer support information.
+* [Home](https://procloud.info/en/index.html) - Introduction page for cloud solutions, secure access, and IT support.
+* [About Us](https://procloud.info/en/about.html) - Who we are, values, and ProCloud's track record.
+* [Cloud ERP](https://procloud.info/en/cloud-erp.html) - Sage, SAP, and A3 cloud publishing, security and support.
+* [Blog](https://procloud.info/en/blog.html) - Articles about cloud tech, computer security, and productivity.
+* [Contact](https://procloud.info/en/contact.html) - Contact form and customer support information.

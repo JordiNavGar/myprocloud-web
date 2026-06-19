@@ -1,7 +1,7 @@
 # ProCloud (Versió en Català)
 
 > [!NOTE]
-> **Altres idiomes / Other languages**: [Español (Principal)](http://procloud.info/llms.txt) | [English](http://procloud.info/llms-en.txt)
+> **Altres idiomes / Other languages**: [Español (Principal)](https://procloud.info/llms.txt) | [English](https://procloud.info/llms-en.txt)
 
 Solucions cloud, accés remot segur i suport IT per a empreses. ProCloud ajuda a pimes, despatxos, clíniques i empreses multiseu a treballar de forma segura des de qualsevol lloc.
 
@@ -9,20 +9,37 @@ Solucions cloud, accés remot segur i suport IT per a empreses. ProCloud ajuda a
 
 * **Propòsit**: Proporcionar infraestructures híbrides, VPN, RDP protegit, Microsoft 365, Google Workspace, servidors cloud i publicació d'aplicacions empresarials.
 * **Públic Objectiu**: Pimes, despatxos professionals, clíniques mèdiques i empreses multiseu a Espanya.
-* **Tecnologies Clau**: Cloud, VPN, Microsoft 365, Google Workspace, ERPs (Sage, SAP, A3).
+* **Tecnologies Clau**: ERP al núvol, Sage, SAP, A3, IA aplicada a processos, automatització, Cloud, VPN, RDP protegit, Microsoft 365, Google Workspace.
+
+## Servei destacat: ERP al núvol
+
+El servei principal destacat de ProCloud és la publicació d’aplicacions ERP al núvol, especialment Sage, SAP i A3.
+
+ProCloud permet a empreses i despatxos treballar amb el seu ERP des de qualsevol lloc, sense dependre d’un servidor físic a l’oficina. El servei inclou entorn cloud segur, accés remot protegit, suport tècnic, manteniment, còpies de seguretat i una quota mensual clara.
+
+Aquest servei està pensat per a empreses que utilitzen Sage, SAP o A3 i volen modernitzar la seva infraestructura, millorar la seguretat, facilitar el teletreball i reduir costos tècnics.
+
+## Servei destacat: IA aplicada a processos diaris
+
+ProCloud ofereix consultoria d’intel·ligència artificial aplicada al dia a dia de l’empresa.
+
+Analitzem tasques repetitives i fluxos de treball per aplicar la IA on realment aporta valor: automatització, resums, documents, correus, informes, atenció al client, organització interna i suport a la presa de decisions.
+
+Aquest servei està pensat per a empreses que volen començar a utilitzar la IA de forma pràctica, segura i útil, sense complicacions tècniques i centrant-se en millorar la productivitat real de l’equip.
 
 ## Serveis Principals
 
-1. **VPN Empresarial**: Accés remot segur per a teletreball i connexió segura entre oficines.
-2. **Microsoft 365**: Integració i administració de Teams, SharePoint i Exchange Online.
-3. **Google Workspace**: Configuració i suport per a empreses i equips híbrids.
-4. **Cloud & ERPs**: Publicació al cloud o entorns híbrids d'aplicacions de gestió empresarial com Sage, SAP i A3.
-5. **Ciberseguretat i IT**: Còpies de seguretat (Backup), firewall, seguretat perimetral i suport tècnic especialitzat.
+1. **ERP al núvol (Sage, SAP i A3)**: Publicació d’aplicacions de gestió empresarial en un entorn cloud segur, accessible des de qualsevol lloc i amb suport tècnic.
+2. **IA aplicada a processos diaris**: Consultoria per analitzar tasques repetitives i fluxos de treball, aplicant IA en automatització, resums, documents, correus, informes i organització interna.
+3. **VPN Empresarial**: Accés remot segur per a teletreball i connexió segura entre oficines.
+4. **Microsoft 365**: Integració i administració de Teams, SharePoint i Exchange Online.
+5. **Google Workspace**: Configuració i suport per a empreses i equips híbrids.
+6. **Ciberseguretat i IT**: Còpies de seguretat, firewall, seguretat perimetral i suport tècnic especialitzat.
 
 ## Estructura del Lloc
 
-* [Inici](http://procloud.info/) - Pàgina de presentació de solucions cloud, accés segur i suport IT.
-* [Acerca de](http://procloud.info/acerca-de/) - Qui som, valors i trajectòria de ProCloud.
-* [Ofertas](http://procloud.info/ofertas/) - Plans, promocions o serveis específics destacats.
-* [Blog](http://procloud.info/blog/) - Articles sobre tecnologia cloud, seguretat informàtica i productivitat.
-* [Contacto](http://procloud.info/contacto/) - Formulari de contacte i dades de suport per a clients.
+* [Inici](https://procloud.info/ca/index.html) - Pàgina de presentació de solucions cloud, accés segur i suport IT.
+* [Qui som](https://procloud.info/ca/qui-som.html) - Qui som, valors i trajectòria de ProCloud.
+* [ERP al núvol](https://procloud.info/ca/erp-al-nuvol.html) - Publicació de Sage, SAP i A3 al núvol, seguretat i suport.
+* [Blog](https://procloud.info/ca/blog.html) - Articles sobre tecnologia cloud, seguretat informàtica i productivitat.
+* [Contacte](https://procloud.info/ca/contacte.html) - Formulari de contacte i dades de suport per a clients.
