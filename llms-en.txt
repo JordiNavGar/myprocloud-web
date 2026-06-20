@@ -9,7 +9,7 @@ Cloud solutions, secure remote access, and IT support for businesses. ProCloud h
 
 * **Purpose**: Provide hybrid infrastructures, VPNs, protected RDP, Microsoft 365, Google Workspace, cloud servers, and publishing of business applications.
 * **Target Audience**: SMEs, professional law/consultancy firms, medical clinics, and multi-site companies in Spain.
-* **Key Technologies**: Cloud ERP, Sage, SAP, A3, AI applied to business processes, automation, Cloud, VPN, protected RDP, Microsoft 365, Google Workspace.
+* **Key Technologies**: Cloud ERP, Sage, SAP, A3, AI applied to business processes, automation, Cloud, VPN and Zero Trust with Cloudflare (Cloudflare Tunnel, Cloudflare Access, WARP), Microsoft 365, Google Workspace, Backup and cybersecurity, IT support.
 
 ## Featured Service: Cloud ERP
 
@@ -31,10 +31,10 @@ This service is designed for companies that want to start using AI in a practica
 
 1. **Cloud ERP (Sage, SAP and A3)**: Publishing business management applications in a secure cloud environment, accessible from anywhere and with technical support.
 2. **AI Applied to Daily Processes**: Consulting to analyze repetitive tasks and workflows, applying AI to automation, summaries, documents, emails, reports and internal organization.
-3. **Enterprise VPN**: Secure remote access for teleworking and secure connection between office branch sites.
+3. **Enterprise VPN and Zero Trust**: Secure remote access for teleworking and branch office connections using Cloudflare (Cloudflare Tunnel, Cloudflare Access and WARP).
 4. **Microsoft 365**: Integration and management of Teams, SharePoint and Exchange Online.
 5. **Google Workspace**: Setup and support for business and hybrid teams.
-6. **Cybersecurity & IT**: Backups, firewalls, perimeter security and specialized technical support.
+6. **Backup & Cybersecurity**: Immutable Veeam backups against ransomware, firewalls, perimeter security and IT support.
 
 ## Site Structure
 

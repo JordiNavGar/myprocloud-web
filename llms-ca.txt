@@ -9,7 +9,7 @@ Solucions cloud, accés remot segur i suport IT per a empreses. ProCloud ajuda a
 
 * **Propòsit**: Proporcionar infraestructures híbrides, VPN, RDP protegit, Microsoft 365, Google Workspace, servidors cloud i publicació d'aplicacions empresarials.
 * **Públic Objectiu**: Pimes, despatxos professionals, clíniques mèdiques i empreses multiseu a Espanya.
-* **Tecnologies Clau**: ERP al núvol, Sage, SAP, A3, IA aplicada a processos, automatització, Cloud, VPN, RDP protegit, Microsoft 365, Google Workspace.
+* **Tecnologies Clau**: ERP al núvol, Sage, SAP, A3, IA aplicada a processos, automatització, Cloud, VPN i Zero Trust amb Cloudflare (Cloudflare Tunnel, Cloudflare Access, WARP), Microsoft 365, Google Workspace, Backup i ciberseguretat, Suport IT.
 
 ## Servei destacat: ERP al núvol
 
@@ -31,10 +31,10 @@ Aquest servei està pensat per a empreses que volen començar a utilitzar la IA 
 
 1. **ERP al núvol (Sage, SAP i A3)**: Publicació d’aplicacions de gestió empresarial en un entorn cloud segur, accessible des de qualsevol lloc i amb suport tècnic.
 2. **IA aplicada a processos diaris**: Consultoria per analitzar tasques repetitives i fluxos de treball, aplicant IA en automatització, resums, documents, correus, informes i organització interna.
-3. **VPN Empresarial**: Accés remot segur per a teletreball i connexió segura entre oficines.
+3. **VPN Empresarial i Zero Trust**: Accés remot segur per a teletreball i connexió segura entre oficines mitjançant Cloudflare (Cloudflare Tunnel, Cloudflare Access i WARP).
 4. **Microsoft 365**: Integració i administració de Teams, SharePoint i Exchange Online.
 5. **Google Workspace**: Configuració i suport per a empreses i equips híbrids.
-6. **Ciberseguretat i IT**: Còpies de seguretat, firewall, seguretat perimetral i suport tècnic especialitzat.
+6. **Backup i Ciberseguretat**: Còpies de seguretat immutables Veeam contra ransomware, firewall, seguretat perimetral i suport IT.
 
 ## Estructura del Lloc
 

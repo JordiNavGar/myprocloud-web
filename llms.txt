@@ -9,7 +9,7 @@ Soluciones cloud, acceso remoto seguro y soporte IT para empresas. ProCloud ayud
 
 * **Propósito**: Proporcionar infraestructuras híbridas, VPN, RDP protegido, Microsoft 365, Google Workspace, servidores cloud y publicación de aplicaciones empresariales.
 * **Público Objetivo**: Pymes, despachos profesionales, clínicas médicas y empresas multisede en España.
-* **Tecnologías Clave**: ERP en la nube, Sage, SAP, A3, IA aplicada a procesos, automatización, Cloud, VPN, RDP protegido, Microsoft 365, Google Workspace.
+* **Tecnologías Clave**: ERP en la nube, Sage, SAP, A3, IA aplicada a procesos, automatización, Cloud, VPN y Zero Trust con Cloudflare (Cloudflare Tunnel, Cloudflare Access, WARP), Microsoft 365, Google Workspace, Backup y ciberseguridad, Soporte IT.
 
 ## Servicio Destacado: ERP en la nube
 
@@ -31,10 +31,10 @@ Este servicio está pensado para empresas que quieren empezar a usar la IA de fo
 
 1. **ERP en la nube (Sage, SAP y A3)**: Publicación de aplicaciones de gestión empresarial en un entorno cloud seguro, accesible desde cualquier lugar y con soporte técnico.
 2. **IA aplicada a procesos diarios**: Consultoría para analizar tareas repetitivas y flujos de trabajo, aplicando IA en automatización, resúmenes, documentos, correos, informes y organización interna.
-3. **VPN Empresarial**: Acceso remoto seguro para teletrabajo y conexión segura entre oficinas.
+3. **VPN Empresarial y Zero Trust**: Acceso remoto seguro para teletrabajo y conexión segura entre oficinas mediante Cloudflare (Cloudflare Tunnel, Cloudflare Access y WARP).
 4. **Microsoft 365**: Integración y administración de Teams, SharePoint y Exchange Online.
 5. **Google Workspace**: Configuración y soporte para empresas y equipos híbridos.
-6. **Ciberseguridad e IT**: Copias de seguridad, firewall, seguridad perimetral y soporte técnico especializado.
+6. **Backup y Ciberseguridad**: Copias de seguridad inmutables Veeam contra ransomware, firewall, seguridad perimetral y soporte IT.
 
 ## Estructura del Sitio
 

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria Técnica y Esquema de Arquitectura - ProCloud</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    
+    :root {
+      --primary: #0F52BA;
+      --primary-light: #E0F2FE;
+      --primary-dark: #0A3D91;
+      --secondary: #1E293B;
+      --accent: #3B82F6;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #334155;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      line-height: 1.5;
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .page {
+      width: 210mm;
+      min-height: 296mm;
+      padding: 22mm 20mm;
+      margin: 30px auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      position: relative;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .page:last-child {
+      page-break-after: avoid;
+    }
+    
+    /* Cover Page Specific */
+    .cover {
+      justify-content: space-between;
+      height: 296mm;
+    }
+    
+    .cover-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 20px;
+    }
+    
+    .logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -1px;
+    }
+    
+    .logo span {
+      color: var(--accent);
+    }
+    
+    .cover-body {
+      margin: auto 0;
+      padding: 40px 0;
+    }
+    
+    .project-tag {
+      display: inline-block;
+      padding: 6px 16px;
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 13px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 24px;
+    }
+    
+    .cover-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--secondary);
+      margin: 0 0 20px 0;
+    }
+    
+    .cover-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.6;
+      margin: 0;
+    }
+    
+    .cover-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    
+    .meta-item {
+      font-size: 12px;
+    }
+    
+    .meta-item strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    
+    .meta-item span {
+      color: var(--text-muted);
+    }
+    
+    /* Headings */
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--secondary);
+      margin-top: 0;
+    }
+    
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      color: var(--secondary);
+    }
+    
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 13px;
+      text-align: justify;
+    }
+    
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 12px;
+      padding-left: 20px;
+      font-size: 13px;
+    }
+    
+    li {
+      margin-bottom: 4px;
+    }
+    
+    .tree-block {
+      background-color: #0F172A;
+      color: #F8FAFC;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 11px;
+      line-height: 1.3;
+      margin-bottom: 15px;
+      overflow-x: auto;
+    }
+    
+    .code-inline {
+      font-family: monospace;
+      background-color: #F1F5F9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #0F172A;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+    
+    th, td {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #F1F5F9;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #F8FAFC;
+    }
+    
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 4px;
+      background-color: #E2E8F0;
+      color: #475569;
+    }
+    
+    .badge-success {
+      background-color: #D1FAE5;
+      color: #065F46;
+    }
+    
+    .badge-info {
+      background-color: #DBEAFE;
+      color: #1E40AF;
+    }
+    
+    .badge-warning {
+      background-color: #FEF3C7;
+      color: #92400E;
+    }
+    
+    .footer-meta {
+      margin-top: auto;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+    
+    .callout {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 12px 15px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+    
+    .callout-title {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .callout-warning {
+      background-color: #FEF3C7;
+      border-left: 4px solid var(--warning);
+    }
+    .callout-warning .callout-title {
+      color: #92400E;
+    }
+    
+    /* Print layout tweaks */
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+      .page {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        height: 297mm;
+        min-height: 297mm;
+        padding: 20mm;
+      }
+    }
+  </style>
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Memoria Técnica y Esquema de Arquitectura - ProCloud">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procloud.info/esquema_y_memoria.html">
+  <meta property="og:image" content="https://procloud.info/assets/og/procloud-og.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Memoria Técnica y Esquema de Arquitectura - ProCloud">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://procloud.info/assets/og/procloud-og.jpg">
+  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+  {
+    "@type": "BreadcrumbList",
+    "@id": "https://procloud.info/esquema_y_memoria.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://procloud.info/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Memoria Técnica y Esquema de Arquitectura - ProCloud",
+        "item": "https://procloud.info/esquema_y_memoria.html"
+      }
+    ]
+  },
+  {
+    "@type": "Organization",
+    "@id": "https://procloud.info/#organization",
+    "name": "ProCloud",
+    "url": "https://procloud.info/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://procloud.info/assets/images/procloud-icon.png",
+      "caption": "ProCloud Logo"
+    },
+    "email": "jordi@procloud.info",
+    "areaServed": "ES",
+    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
+  },
+  {
+    "@type": "ProfessionalService",
+    "@id": "https://procloud.info/#serviceProvider",
+    "name": "ProCloud",
+    "image": "https://procloud.info/assets/images/procloud-icon.png",
+    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+    "email": "jordi@procloud.info",
+    "url": "https://procloud.info/esquema_y_memoria.html",
+    "areaServed": {
+      "@type": "Country",
+      "name": "España"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "knowsAbout": [
+      "ERP en la nube",
+      "Sage en la nube",
+      "SAP en la nube",
+      "A3 en la nube",
+      "Cloud empresarial",
+      "VPN y teletrabajo",
+      "Zero Trust con Cloudflare",
+      "Microsoft 365",
+      "Google Workspace",
+      "IA aplicada a procesos diarios",
+      "Backup y ciberseguridad",
+      "Soporte IT"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Catálogo de Servicios ProCloud",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "ERP en la nube",
+            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "EUR"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
+  }
+  </script>
+  
+</head>
+<body>
+
+  <!-- PÁGINA 1: PORTADA -->
+  <div class="page cover">
+    <div class="cover-header">
+      <div class="logo">PRO<span>CLOUD</span></div>
+      <div style="font-size: 12px; color: var(--text-muted); font-weight: 600;">INFORME TÉCNICO DE SISTEMAS</div>
+    </div>
+    
+    <div class="cover-body">
+      <span class="project-tag">Optimización SEO y Seguridad</span>
+      <h1 class="cover-title">MEMORIA TÉCNICA Y ESQUEMA DE ARQUITECTURA</h1>
+      <p class="cover-subtitle">
+        Documentación completa de la reestructuración del sitio web corporativo de ProCloud. Reorganización comercial B2B, integración multilingüe (ES, CA, EN), landings SEO de servicios, motor de blog estructurado, validación anti-spam en formularios y auditoría de integridad global.
+      </p>
+    </div>
+    
+    <div class="cover-footer">
+      <div class="meta-item">
+        <strong>Propietario / Cliente</strong>
+        <span>Jordi Navarro - ProCloud.info</span>
+      </div>
+      <div class="meta-item">
+        <strong>Desarrollado Por</strong>
+        <span>Antigravity AI (DeepMind Team)</span>
+      </div>
+      <div class="meta-item">
+        <strong>Fecha y Versión</strong>
+        <span>19 de Junio de 2026 / Versión 1.0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA 2: ÍNDICE Y ESTRUCTURA -->
+  <div class="page">
+    <h1>1. Introducción y Arquitectura del Sitio</h1>
+    <p>
+      La presente memoria técnica detalla los trabajos de ingeniería de software, maquetación frontend y optimización SEO técnica aplicados sobre el sitio web corporativo de <strong>ProCloud</strong> (disponible en <a href="https://www.procloud.info">www.procloud.info</a>). El objetivo principal ha sido pivotar la oferta comercial hacia un modelo <strong>B2B Premium</strong>, eliminando conceptos de bajo coste ("ofertas/tarifas") y potenciando las verticales de ERP en la nube, ciberseguridad, ciber-resiliencia y automatización con Inteligencia Artificial.
+    </p>
+    
+    <h2>1.1 Esquema de Directorios y Ficheros</h2>
+    <p>
+      El sitio web se organiza bajo una estructura estática multilingüe limpia, con subcarpetas dedicadas para las localizaciones en Catalán (<code>/ca/</code>) e Inglés (<code>/en/</code>), además de directorios específicos para el contenido dinámico del Blog.
+    </p>
+    
+    <div class="tree-block">
+C:\WEB\WEB\
+├── index.html                           # Home en Español
+├── erp-en-la-nube.html                  # Landing principal Cloud ERP (ES)
+├── servicios-cloud.html                 # Servicios principales Cloud (ES)
+├── contacto.html                        # Contacto y formulario (ES)
+├── acerca-de.html                       # Quiénes somos (ES)
+├── robots.txt                           # Reglas de rastreo de buscadores
+├── sitemap.xml                          # Mapa de sitio (51 URLs indexables)
+├── blog.html                            # Índice del Blog en Español
+│
+├── blog/                                # Carpeta de Artículos (ES)
+│   ├── asegurar-acceso-rdp-servidores.html
+│   ├── microsoft-365-despachos-teams-sharepoint-exchange.html
+│   └── copia-inmutable-ransomware.html
+│
+├── ca/                                  # Versión en Catalán (CA)
+│   ├── index.html                       # Home en Catalán
+│   ├── erp-al-nuvol.html                # Landing principal Cloud ERP (CA)
+│   ├── serveis-cloud.html               # Servicios principales (CA)
+│   ├── contacte.html                    # Contacto (CA)
+│   ├── qui-som.html                     # Quiénes somos (CA)
+│   ├── blog.html                        # Índice del Blog (CA)
+│   └── blog/                            # Artículos (CA)
+│       └── [3 posts localizados en catalán]
+│
+├── en/                                  # Versión en Inglés (EN)
+│   ├── index.html                       # Home en Inglés
+│   ├── cloud-erp.html                   # Landing principal Cloud ERP (EN)
+│   ├── cloud-services.html              # Servicios principales (EN)
+│   ├── contact.html                     # Contacto (EN)
+│   ├── about.html                       # Quiénes somos (EN)
+│   ├── blog.html                        # Índice del Blog (EN)
+│   └── blog/                            # Artículos (EN)
+│       └── [3 posts localizados en inglés]
+│
+└── assets/                              # Recursos estáticos
+    ├── css/style.css                    # Estilos globales y responsive
+    ├── js/                              # Código JS (hCaptcha, UI)
+    └── images/                          # Ilustraciones y recursos visuales
+    </div>
+
+    <div class="footer-meta">
+      <span>Memoria Técnica ProCloud</span>
+      <span>Página 2 de 5</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 3: ESTRATEGIA SEO Y LANDINGS -->
+  <div class="page">
+    <h1>2. SEO Semántico y Renombrado de URLs</h1>
+    <p>
+      Para reorientar el posicionamiento comercial, se realizó una reestructuración de la base de nombres del servidor. Se eliminaron físicamente todos los archivos que aludían a "ofertas", "tarifas" u "offers", reemplazándose por URLs optimizadas para términos de alta intención de búsqueda empresarial:
+    </p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Idioma</th>
+          <th>Ruta Antigua</th>
+          <th>Nueva Ruta SEO</th>
+          <th>Objetivo Semántico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-info">ES</span></td>
+          <td><code>ofertas.html</code></td>
+          <td><code>erp-en-la-nube.html</code></td>
+          <td>ERP en la nube / Sage / SAP / A3 Cloud</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-success">CA</span></td>
+          <td><code>ca/tarifes.html</code></td>
+          <td><code>ca/erp-al-nuvol.html</code></td>
+          <td>ERP al núvol / Sage / SAP / A3 Cloud</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-warning">EN</span></td>
+          <td><code>en/offers.html</code></td>
+          <td><code>en/cloud-erp.html</code></td>
+          <td>Cloud ERP / Sage / SAP / A3 Cloud</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-warning">EN</span></td>
+          <td><code>en/services.html</code></td>
+          <td><code>en/cloud-services.html</code></td>
+          <td>Cloud services for business</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      <strong>Menús y Enlaces Consolidados:</strong> Todos los menús de navegación superior, los enlaces rápidos en el pie de página (footer) y los hipervínculos internos fueron actualizados manualmente en las 51 páginas del proyecto para apuntar a las nuevas rutas físicas, evitando enlaces rotos o redirecciones innecesarias.
+    </p>
+
+    <h1>3. Creación de 24 Landings de Servicio</h1>
+    <p>
+      Se han creado <strong>24 nuevas landing pages</strong> (8 en cada idioma) para posicionar términos de búsqueda altamente cualificados para los servicios core de la empresa:
+    </p>
+    
+    <ul>
+      <li><strong>Software de Gestión:</strong> Sage en la nube, SAP en la nube y A3 en la nube.</li>
+      <li><strong>Productividad y Colaboración:</strong> Microsoft 365 y Google Workspace para empresas.</li>
+      <li><strong>Infraestructura y Conectividad:</strong> VPN / Teletrabajo y Servidores Cloud.</li>
+      <li><strong>Ciberseguridad y Resiliencia:</strong> IA aplicada a procesos y Backup inmutable/Ciberseguridad.</li>
+    </ul>
+
+    <p>
+      <strong>Estándar de Construcción SEO:</strong> Cada landing se diseñó siguiendo un patrón estricto de accesibilidad y SEO On-Page:
+    </p>
+    <ol>
+      <li><strong>Jerarquía Semántica Estricta:</strong> Un único H1 que incluye las keywords clave, con subdivisiones H2 y H3 organizadas lógicamente.</li>
+      <li><strong>Preguntas Frecuentes Interactiva:</strong> Sección de FAQs implementada con el elemento nativo <code>&lt;details&gt;</code>, garantizando una excelente indexación y lectura por parte de bots de búsqueda y asistentes de IA.</li>
+      <li><strong>Imágenes Optimizadas:</strong> Inclusión de las dimensiones físicas (<code>width</code> y <code>height</code>) para prevenir el desplazamiento acumulativo del diseño (CLS), atributo <code>loading="lazy"</code> para optimizar la velocidad y textos <code>alt</code> localizados.</li>
+    </ol>
+
+    <div class="footer-meta">
+      <span>Memoria Técnica ProCloud</span>
+      <span>Página 3 de 5</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 4: MOTOR DE BLOG Y HERO BADGE -->
+  <div class="page">
+    <h1>4. Arquitectura y Enlazado del Blog (9 Páginas)</h1>
+    <p>
+      Para potenciar el marketing de contenidos y captar tráfico informativo de calidad, se crearon las páginas individuales para las 3 entradas principales del blog en sus respectivas versiones de idioma (un total de 9 archivos HTML bajo las subcarpetas <code>/blog/</code>).
+    </p>
+    
+    <h3>Especialización Zero Trust / Cloudflare (Artículo 1):</h3>
+    <p>
+      En la primera entrada de ciberseguridad, se introdujo una sección detallada que posiciona a ProCloud como especialista de referencia en la implementación de arquitecturas <strong>Zero Trust de Cloudflare</strong>. Se describe el uso e integración de:
+    </p>
+    <ul>
+      <li><strong>Cloudflare Tunnels:</strong> Para publicar servicios internos sin abrir puertos públicos en el router.</li>
+      <li><strong>Cloudflare Access:</strong> Control de accesos basado en la identidad con políticas de autenticación multifactor (MFA).</li>
+      <li><strong>Cloudflare WARP:</strong> Cliente VPN moderno y seguro para la protección del tráfico de los endpoints de la organización.</li>
+    </ul>
+
+    <h3>Esquemas de Datos Estructurados JSON-LD:</h3>
+    <p>
+      Para maximizar el CTR en Google y guiar a los motores de búsqueda, cada artículo incluye dos esquemas de datos estructurados:
+    </p>
+    <ol>
+      <li><strong>BlogPosting:</strong> Indica el título, autor (ProCloud), fecha de publicación, imagen y el cuerpo del artículo.</li>
+      <li><strong>BreadcrumbList:</strong> Mapea la jerarquía lógica del artículo (Inicio > Blog > Título del Artículo) facilitando el rastreo de migas de pan.</li>
+    </ol>
+
+    <h1>5. Optimización del Hero Badge y CSS</h1>
+    <p>
+      En las páginas de inicio (Homes), se actualizó la píldora informativa superior del "Hero" para captar de inmediato la atención del cliente corporativo sobre los servicios prioritarios de ProCloud:
+    </p>
+    <ul>
+      <li><strong>Versión ES (index.html):</strong> <code>ERP EN LA NUBE · SAGE · SAP · A3 · IA</code></li>
+      <li><strong>Versión CA (ca/index.html):</strong> <code>ERP AL NÚVOL · SAGE · SAP · A3 · IA</code></li>
+      <li><strong>Versión EN (en/index.html):</strong> <code>CLOUD ERP · SAGE · SAP · A3 · AI</code></li>
+    </ul>
+
+    <p>
+      <strong>Solución de Maquetación Responsive:</strong> Al aumentar el tamaño semántico de la píldora, se introdujo una corrección en <code>assets/css/style.css</code> sobre la clase <code>.pc-headerline</code>:
+    </p>
+    <div class="tree-block" style="background-color: #F8FAFC; color: #0F172A; border: 1px solid var(--border);">
+.pc-headerline {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    flex-wrap: wrap; /* Permite envolver el badge en móviles sin romper el layout */
+    padding: 6px 16px;
+}
+    </div>
+
+    <div class="footer-meta">
+      <span>Memoria Técnica ProCloud</span>
+      <span>Página 4 de 5</span>
+    </div>
+  </div>
+
+  <!-- PÁGINA 5: SEGURIDAD, SITEMAP Y VALIDACIÓN -->
+  <div class="page">
+    <h1>6. Protección Anti-Spam y Seguridad en Formularios</h1>
+    <p>
+      El formulario de contacto (enlazado a <strong>Web3Forms</strong>) ha sido blindado frente a envíos automatizados por bots. La solución implementa tres niveles de protección coordinados:
+    </p>
+    
+    <div class="callout">
+      <div class="callout-title">Nivel 1: Bloqueo Visual y Físico por Defecto</div>
+      El botón de envío se inicializa con el atributo <code>disabled="true"</code>, estilizado con opacidad del 50% y el cursor <code>not-allowed</code> para evitar cualquier interacción prematura.
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Nivel 2: Habilitación Dinámica vía hCaptcha Callback</div>
+      El widget de hCaptcha incluye los parámetros <code>data-callback="onCaptchaSuccess"</code> y <code>data-expired-callback="onCaptchaExpired"</code>. Cuando el usuario resuelve con éxito el reto, el callback JavaScript remueve el atributo <code>disabled</code> y restablece el diseño normal. Si el token expira, se bloquea el botón al instante.
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">Nivel 3: Interceptación en Fase de Captura (Inyección JavaScript)</div>
+      Dado que el script cliente de Web3Forms intercepta los envíos del formulario de manera asíncrona, se ha registrado un escuchador de eventos en la <strong>fase de captura</strong> (usando <code>true</code> como tercer parámetro del <code>addEventListener</code>). Este script verifica la existencia y longitud de la respuesta <code>h-captcha-response</code> y el campo honeypot oculto <code>botcheck</code>. Si falla alguna prueba, ejecuta <code>e.preventDefault()</code> y <code>e.stopImmediatePropagation()</code>, cancelando por completo el envío a Web3Forms.
+    </div>
+
+    <h1>7. SEO Técnico y Metadatos de Redirección</h1>
+    <ul>
+      <li><strong>Sitemap XML:</strong> Construido con 51 URLs que listan de manera precisa e indexable todas las páginas activas de la web en ES, CA y EN, incluyendo sus anotaciones recíprocas de idioma (<code>xhtml:link rel="alternate" hreflang="..."</code>).</li>
+      <li><strong>Robots.txt:</strong> Configurado con <code>Allow: /</code> para autorizar el rastreo de Google e indicar explícitamente el sitemap indexable.</li>
+    </ul>
+
+    <h1>8. Validación de Integridad (100% de Éxito)</h1>
+    <p>
+      Se ha implementado un script de validación automatizada denominado <code>validate_site.js</code>. Este script ejecuta un escaneo completo local del sitio para garantizar que las páginas cumplan con las directrices de SEO y calidad:
+    </p>
+    <ul>
+      <li><strong>0 Enlaces Rotos:</strong> Comprobación de que cada <code>&lt;a href="..."&gt;</code> resuelve correctamente hacia un archivo físico.</li>
+      <li><strong>0 Referencias a Ofertas/Tarifas:</strong> Auditoría de texto y menús para garantizar que no existan trazas de los antiguos términos.</li>
+      <li><strong>0 Números de Teléfono:</strong> Verificación de que no existen números de teléfono hardcodeados en el cuerpo ni en los metadatos JSON-LD.</li>
+    </ul>
+    
+    <div class="callout callout-warning" style="margin-top: 15px;">
+      <div class="callout-title">Resultado de la Auditoría</div>
+      El script de validación local ha certificado que el sitio web corporativo de ProCloud se encuentra al <strong>100% de éxito</strong> operativo, sin fallos en enlaces ni problemas de rastreo.
+    </div>
+
+    <div class="footer-meta">
+      <span>Memoria Técnica ProCloud</span>
+      <span>Página 5 de 5</span>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -21,71 +21,216 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   
   <!-- DATA SCHEMA -->
+  
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  
+  
+  
+  
+  
+
+  <!-- Twitter -->
+  
+  
+  
+  
+  
+
+  
+  
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="SAP Business One in the Cloud | ProCloud">
+  <meta property="og:description" content="Publishing of SAP Business One on high-performance private cloud servers. Managed infrastructure, advanced backups and support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procloud.info/en/sap-cloud.html">
+  <meta property="og:image" content="https://procloud.info/assets/og/procloud-og.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP Business One in the Cloud | ProCloud">
+  <meta name="twitter:description" content="Publishing of SAP Business One on high-performance private cloud servers. Managed infrastructure, advanced backups and support.">
+  <meta name="twitter:image" content="https://procloud.info/assets/og/procloud-og.jpg">
+  
+
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
+    "@context": "https://schema.org",
+    "@graph": [
+  {
+    "@type": "BreadcrumbList",
+    "@id": "https://procloud.info/en/sap-cloud.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://procloud.info/en/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "SAP Business One in the Cloud",
+        "item": "https://procloud.info/en/sap-cloud.html"
+      }
+    ]
+  },
+  {
+    "@type": "Organization",
+    "@id": "https://procloud.info/#organization",
+    "name": "ProCloud",
+    "url": "https://procloud.info/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://procloud.info/assets/images/procloud-icon.png",
+      "caption": "ProCloud Logo"
+    },
+    "email": "jordi@procloud.info",
+    "areaServed": "ES",
+    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
+  },
+  {
+    "@type": "ProfessionalService",
+    "@id": "https://procloud.info/#serviceProvider",
+    "name": "ProCloud",
+    "image": "https://procloud.info/assets/images/procloud-icon.png",
+    "description": "Cloud services, secure access and IT support for SMEs.",
+    "email": "jordi@procloud.info",
+    "url": "https://procloud.info/en/sap-cloud.html",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "knowsAbout": [
+      "Cloud ERP",
+      "Sage cloud",
+      "SAP cloud",
+      "A3 cloud",
+      "Enterprise cloud",
+      "VPN and remote work",
+      "Zero Trust with Cloudflare",
+      "Microsoft 365",
+      "Google Workspace",
+      "AI applied to business processes",
+      "Backup and cybersecurity",
+      "IT support"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ProCloud Services Catalog",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://procloud.info/en/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "SAP Business One in the Cloud",
-          "item": "https://procloud.info/en/sap-cloud.html"
-        }
-      ]
-    },
-    {
-      "@type": "Service",
-      "name": "SAP Business One in the Cloud | ProCloud",
-      "provider": {
-        "@type": "Organization",
-        "name": "ProCloud",
-        "url": "https://procloud.info"
-      },
-      "areaServed": "EU",
-      "serviceType": "sap",
-      "description": "Publishing of SAP Business One on high-performance private cloud servers. Managed infrastructure, advanced backups and support."
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can SAP run in a private cloud environment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We set up private servers with dedicated database allocation (HANA/SQL) to ensure optimal response times, free from multi-tenant congestion."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is remote access to SAP secure?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Access is protected by corporate VPN tunnels and secure RDP gateways requiring Multi-Factor Authentication (MFA)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How are server disruptions handled?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our monitoring agents watch the SAP instance 24/7. In case of memory spikes or network alerts, our support desk acts immediately to restore stability."
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cloud ERP",
+            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "EUR"
+            }
           }
         }
       ]
     }
-  ]
-}
+  },
+  {
+    "@type": "Service",
+    "@id": "https://procloud.info/en/sap-cloud.html#service",
+    "name": "SAP on Cloud",
+    "description": "Migration of SAP Business One to dedicated cloud servers with NVMe performance and Veeam backups.",
+    "provider": {
+      "@id": "https://procloud.info/#serviceProvider"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    "serviceType": "SAP on Cloud",
+    "url": "https://procloud.info/en/sap-cloud.html"
+  },
+  {
+    "@type": "FAQPage",
+    "@id": "https://procloud.info/en/sap-cloud.html#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can SAP run in a private cloud environment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We set up private servers with dedicated database allocation (HANA/SQL) to ensure optimal response times, free from multi-tenant congestion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is remote access to SAP secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Access is protected by corporate VPN tunnels and secure RDP gateways requiring Multi-Factor Authentication (MFA)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are server disruptions handled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our monitoring agents watch the SAP instance 24/7. In case of memory spikes or network alerts, our support desk acts immediately to restore stability."
+        }
+      }
+    ]
+  }
+]
+  }
   </script>
+  
 </head>
 <body class="pc-page">
 
@@ -263,7 +408,9 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>Email: info@procloud.info</p>
+          <p>Email: <a href="mailto:jordi@procloud.info">jordi@procloud.info</a></p>
+          <p>Service area: Spain</p>
+          <p>Business hours: Monday to Friday, 9:00 - 18:00</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -278,6 +425,6 @@
     </svg>
   </div>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js?v=1.3"></script>
 </body>
 </html>
