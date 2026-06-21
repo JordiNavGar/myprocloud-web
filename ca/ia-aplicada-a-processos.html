@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Consultoria d'IA aplicada a processos administratius",
+            "item": "https://procloud.info/ca/ia-aplicada-a-processos.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Consultoria d'IA aplicada a processos administratius",
-        "item": "https://procloud.info/ca/ia-aplicada-a-processos.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/ia-aplicada-a-processos.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/ia-aplicada-a-processos.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#service",
+        "name": "IA aplicada a processos",
+        "description": "Automatització de processos diaris, anàlisi de correus, generació de resums i informes mitjançant Intel·ligència Artificial.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "serviceType": "IA aplicada a processos",
+        "url": "https://procloud.info/ca/ia-aplicada-a-processos.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "L'IA aplicada és segura per a les meves dades?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Dissenyem i implementem solucions que respecten el RGPD, assegurant que les dades sensibles de la teva empresa no es comparteixin de forma pública."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cal tenir coneixements de programació?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Nosaltres ens encarreguem de tot el desenvolupament tècnic i integracions, lliurant eines senzilles que el teu equip pot utilitzar des del primer dia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quant de temps es triga a veure resultats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Els primers fluxos bàsics d'automatització i plantilles intel·ligents solen estar llistos i aportant valor en poques setmanes després de l'auditoria inicial."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#service",
-    "name": "IA aplicada a processos",
-    "description": "Automatització de processos diaris, anàlisi de correus, generació de resums i informes mitjançant Intel·ligència Artificial.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "serviceType": "IA aplicada a processos",
-    "url": "https://procloud.info/ca/ia-aplicada-a-processos.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/ia-aplicada-a-processos.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "L'IA aplicada és segura per a les meves dades?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Dissenyem i implementem solucions que respecten el RGPD, assegurant que les dades sensibles de la teva empresa no es comparteixin de forma pública."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Cal tenir coneixements de programació?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Nosaltres ens encarreguem de tot el desenvolupament tècnic i integracions, lliurant eines senzilles que el teu equip pot utilitzar des del primer dia."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quant de temps es triga a veure resultats?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Els primers fluxos bàsics d'automatització i plantilles intel·ligents solen estar llistos i aportant valor en poques setmanes després de l'auditoria inicial."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">IA SERVICES</div>
+          <h1 id="seo-hero-title">IA aplicada a processos</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Optimització de fluxos de treball administratius mitjançant Intel·ligència Artificial pràctica.</p>
+          <p>Analitzem tasques repetitives i fluxos de treball per aplicar la IA on realment aporta valor: automatització, resums, documents, correus, informes, atenció al client i organització interna. T'ajudem a transformar la teva pime fent-la més productiva.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contacte.html">Contacta amb nosaltres</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="../assets/images/hero-cloud-illustration.png" alt="Consultoria d'IA aplicada a processos administratius | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section pc-section-light" style="padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Casos d’ús habituals</h2>
@@ -298,6 +326,61 @@
       </div>
     </section>
   
+    <!-- TABLA COMPARATIVA -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Processos manuals vs IA aplicada a processos</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Àmbit</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Processos manuals</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">IA aplicada a processos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Tasques repetitives</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Entrada manual de dades, còpia d’informació i tasques administratives lentes.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Automatització intel·ligent que extreu dades de factures o tiquets sense errors.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Resums</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Lectura completa de fils de correu extensos o documents llargs que consumeix temps.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Generació instantània de resums de reunions, àudios, actes i contractes.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Documents</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Redacció i format des de zero per a propostes, plantilles o comunicacions.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Creació assistida d’esborranys de contractes i documents a partir de bases de dades.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Correus</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Redacció individualitzada de respostes a consultes freqüents de clients.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Generació àgil de respostes professionals personalitzades i classificades per tema.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Informes</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Recopilació manual de dades de diverses fonts i maquetació tediosa.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Creació automatitzada d’informes visuals creuant dades de múltiples ERPs.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Organització interna</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Dependència de la memòria del personal per seguir fluxos i arxivar documents.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Fluxos de treball digitals automatitzats i arxiu estructurat intel·ligent.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Temps de resposta</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Hores o dies depenent de la càrrega de treball i disponibilitat de personal.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Segons per a anàlisi de dades i minuts per a fluxos de processament.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
 <section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>

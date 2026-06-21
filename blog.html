@@ -107,97 +107,116 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/blog.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://procloud.info/"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/blog.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog de Tecnología Cloud, Ciberseguridad y Soporte",
+            "item": "https://procloud.info/blog.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog de Tecnología Cloud, Ciberseguridad y Soporte",
-        "item": "https://procloud.info/blog.html"
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/blog.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP en la nube",
+          "Sage en la nube",
+          "SAP en la nube",
+          "A3 en la nube",
+          "Cloud empresarial",
+          "VPN y teletrabajo",
+          "Zero Trust con Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a procesos diarios",
+          "Backup y ciberseguridad",
+          "Soporte IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Servicios ProCloud",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP en la nube",
+                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Soporte IT y servicios cloud"
       }
     ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/blog.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP en la nube",
-      "Sage en la nube",
-      "SAP en la nube",
-      "A3 en la nube",
-      "Cloud empresarial",
-      "VPN y teletrabajo",
-      "Zero Trust con Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a procesos diarios",
-      "Backup y ciberseguridad",
-      "Soporte IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catálogo de Servicios ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP en la nube",
-            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-            "offers": {
-              "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
-            }
-          }
-        }
-      ]
-    }
-  }
-]
   }
   </script>
   

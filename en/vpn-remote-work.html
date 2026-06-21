@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/en/vpn-remote-work.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://procloud.info/en/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/en/vpn-remote-work.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://procloud.info/en/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Enterprise VPN and Secure Remote Work Solutions",
+            "item": "https://procloud.info/en/vpn-remote-work.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Enterprise VPN and Secure Remote Work Solutions",
-        "item": "https://procloud.info/en/vpn-remote-work.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Cloud services, secure access and IT support for SMEs.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/en/vpn-remote-work.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "Cloud ERP",
-      "Sage cloud",
-      "SAP cloud",
-      "A3 cloud",
-      "Enterprise cloud",
-      "VPN and remote work",
-      "Zero Trust with Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "AI applied to business processes",
-      "Backup and cybersecurity",
-      "IT support"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "ProCloud Services Catalog",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud ERP",
-            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Cloud services, secure access and IT support for SMEs.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/en/vpn-remote-work.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "Cloud ERP",
+          "Sage cloud",
+          "SAP cloud",
+          "A3 cloud",
+          "Enterprise cloud",
+          "VPN and remote work",
+          "Zero Trust with Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "AI applied to business processes",
+          "Backup and cybersecurity",
+          "IT support"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ProCloud Services Catalog",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cloud ERP",
+                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "IT support and cloud services"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/en/vpn-remote-work.html#service",
+        "name": "VPN & Secure Remote Work",
+        "description": "Configuration of secure remote access, corporate VPN networks, and encrypted tunnels.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "serviceType": "VPN & Secure Remote Work",
+        "url": "https://procloud.info/en/vpn-remote-work.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/en/vpn-remote-work.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between VPN and Remote Desktop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A VPN is an encrypted corridor that safely binds an external PC to the office network. A Remote Desktop (RDP) session lets you control an actual office computer remotely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to buy new laptops for my team?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We can set up our secure client software and connection protocols on your existing workstations (Windows/macOS) easily."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will VPN connections slow down performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We utilize optimized encryption standards and data compression techniques to ensure high speed and low latency for database operations."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/en/vpn-remote-work.html#service",
-    "name": "VPN & Secure Remote Work",
-    "description": "Configuration of secure remote access, corporate VPN networks, and encrypted tunnels.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "serviceType": "VPN & Secure Remote Work",
-    "url": "https://procloud.info/en/vpn-remote-work.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/en/vpn-remote-work.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the difference between VPN and Remote Desktop?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A VPN is an encrypted corridor that safely binds an external PC to the office network. A Remote Desktop (RDP) session lets you control an actual office computer remotely."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need to buy new laptops for my team?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We can set up our secure client software and connection protocols on your existing workstations (Windows/macOS) easily."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will VPN connections slow down performance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We utilize optimized encryption standards and data compression techniques to ensure high speed and low latency for database operations."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">VPN SERVICES</div>
+          <h1 id="seo-hero-title">VPN and Remote Work</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Secure, encrypted remote access to connect your employees to the office network.</p>
+          <p>Enabling remote work shouldn't expose your company network to internet threats. We install corporate security solutions using perimeter firewalls and encrypted virtual private networks (VPN), ensuring folder access, databases, and local business software remain inaccessible to outsiders.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contact.html">Contact us</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="../assets/images/hero-cloud-illustration.png" alt="Enterprise VPN and Secure Remote Work Solutions | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section" style="background: var(--pc-white); padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px;">Traditional VPN vs Zero Trust</h2>

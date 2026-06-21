@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/vpn-teletreball.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/vpn-teletreball.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "VPN empresarial i solucions de Teletreball segur",
+            "item": "https://procloud.info/ca/vpn-teletreball.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "VPN empresarial i solucions de Teletreball segur",
-        "item": "https://procloud.info/ca/vpn-teletreball.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/vpn-teletreball.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/vpn-teletreball.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ca/vpn-teletreball.html#service",
+        "name": "VPN i Teletreball Segur",
+        "description": "Configuració d'accessos remots segurs, xarxes privades VPN i entorns perimetrals xifrats.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "serviceType": "VPN i Teletreball Segur",
+        "url": "https://procloud.info/ca/vpn-teletreball.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/vpn-teletreball.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quina diferència hi ha entre VPN i escriptori remot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La VPN és el túnel xifrat que connecta un equip extern a la xarxa de l'oficina de manera segura. L'Escriptori Remot (RDP) et permet veure i controlar un ordinador o servidor que físicament està a l'oficina."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cal canviar els ordinadors dels empleats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Adaptam el programari client de VPN i les polítiques de seguretat als equips existents (Windows o macOS) del teu equip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'accés remot alentix la feina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Utilitzem protocols VPN optimitzats i compressió de trànsit de xarxa per assegurar que la latència sigui mínima i el rendiment sigui molt proper al local."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ca/vpn-teletreball.html#service",
-    "name": "VPN i Teletreball Segur",
-    "description": "Configuració d'accessos remots segurs, xarxes privades VPN i entorns perimetrals xifrats.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "serviceType": "VPN i Teletreball Segur",
-    "url": "https://procloud.info/ca/vpn-teletreball.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/vpn-teletreball.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Quina diferència hi ha entre VPN i escriptori remot?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La VPN és el túnel xifrat que connecta un equip extern a la xarxa de l'oficina de manera segura. L'Escriptori Remot (RDP) et permet veure i controlar un ordinador o servidor que físicament està a l'oficina."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Cal canviar els ordinadors dels empleats?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Adaptam el programari client de VPN i les polítiques de seguretat als equips existents (Windows o macOS) del teu equip."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "L'accés remot alentix la feina?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Utilitzem protocols VPN optimitzats i compressió de trànsit de xarxa per assegurar que la latència sigui mínima i el rendiment sigui molt proper al local."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">VPN SERVICES</div>
+          <h1 id="seo-hero-title">VPN i Teletreball</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Accés remot segur i xifrat per connectar els teus treballadors amb l'oficina.</p>
+          <p>Habilitar el teletreball no ha de comprometre la seguretat de la teva xarxa. Implementem solucions d'accés remot segur a través de tallafocs perimetrals i xarxes privades virtuals (VPN) xifrades, garantint que l'accés a carpetes, bases de dades i programari central de la teva pime estigui blindat.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contacte.html">Contacta amb nosaltres</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="../assets/images/hero-cloud-illustration.png" alt="VPN empresarial i solucions de Teletreball segur | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section" style="background: var(--pc-white); padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px;">VPN tradicional vs Zero Trust</h2>

@@ -107,169 +107,196 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/erp-en-la-nube.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://procloud.info/"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/erp-en-la-nube.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ERP en la nube para Sage, SAP y A3",
+            "item": "https://procloud.info/erp-en-la-nube.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "ERP en la nube para Sage, SAP y A3",
-        "item": "https://procloud.info/erp-en-la-nube.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/erp-en-la-nube.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP en la nube",
-      "Sage en la nube",
-      "SAP en la nube",
-      "A3 en la nube",
-      "Cloud empresarial",
-      "VPN y teletrabajo",
-      "Zero Trust con Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a procesos diarios",
-      "Backup y ciberseguridad",
-      "Soporte IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catálogo de Servicios ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP en la nube",
-            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/erp-en-la-nube.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP en la nube",
+          "Sage en la nube",
+          "SAP en la nube",
+          "A3 en la nube",
+          "Cloud empresarial",
+          "VPN y teletrabajo",
+          "Zero Trust con Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a procesos diarios",
+          "Backup y ciberseguridad",
+          "Soporte IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Servicios ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP en la nube",
+                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Soporte IT y servicios cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/erp-en-la-nube.html#service",
+        "name": "ERP en la nube",
+        "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": "ERP en la nube",
+        "url": "https://procloud.info/erp-en-la-nube.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "98.00",
+          "priceCurrency": "EUR",
+          "description": "desde 98 € al mes",
+          "url": "https://procloud.info/erp-en-la-nube.html"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/erp-en-la-nube.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Puedo usar Sage desde fuera de la oficina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Publicamos tu Sage en la nube para que puedas acceder de forma remota y segura mediante credenciales VPN desde cualquier dispositivo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se puede migrar A3 a la nube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Totalmente. Copiamos tus carpetas de A3 y bases de datos del servidor antiguo al nuevo entorno VPS cloud privado manteniendo todas tus configuraciones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿SAP puede funcionar en un entorno cloud privado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. SAP Business One funciona de forma excelente en nuestros servidores cloud optimizados para cargas HANA o bases de datos SQL."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa con las copias de seguridad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se programan copias de seguridad externas automatizadas con Veeam. En caso de error o ataque, podemos recuperar el estado anterior en poco tiempo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito mantener un servidor local?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Al llevar tu ERP, base de datos y archivos compartidos al cloud, puedes apagar y retirar definitivamente el costoso servidor físico de tu oficina."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El acceso remoto es seguro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Toda la conexión está cifrada de extremo a extremo mediante VPN perimetral y RDP protegido con MFA, cumpliendo estrictamente con el RGPD."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/erp-en-la-nube.html#service",
-    "name": "ERP en la nube",
-    "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "serviceType": "ERP en la nube",
-    "url": "https://procloud.info/erp-en-la-nube.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/erp-en-la-nube.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Puedo usar Sage desde fuera de la oficina?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Publicamos tu Sage en la nube para que puedas acceder de forma remota y segura mediante credenciales VPN desde cualquier dispositivo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Se puede migrar A3 a la nube?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Totalmente. Copiamos tus carpetas de A3 y bases de datos del servidor antiguo al nuevo entorno VPS cloud privado manteniendo todas tus configuraciones."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿SAP puede funcionar en un entorno cloud privado?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. SAP Business One funciona de forma excelente en nuestros servidores cloud optimizados para cargas HANA o bases de datos SQL."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué pasa con las copias de seguridad?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Se programan copias de seguridad externas automatizadas con Veeam. En caso de error o ataque, podemos recuperar el estado anterior en poco tiempo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Necesito mantener un servidor local?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Al llevar tu ERP, base de datos y archivos compartidos al cloud, puedes apagar y retirar definitivamente el costoso servidor físico de tu oficina."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿El acceso remoto es seguro?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Toda la conexión está cifrada de extremo a extremo mediante VPN perimetral y RDP protegido con MFA, cumpliendo estrictamente con el RGPD."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
+
 </head>
 <body class="pc-page">
 
@@ -313,15 +340,24 @@
   <!-- ========================================== -->
   <main id="primary" class="site-main">
     <!-- SECCIÓ HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="erp-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">ERP EN LA NUBE</div>
+          <h1 id="erp-hero-title">ERP en la nube para Sage, SAP y A3</h1>
+          <p class="pc-subheadline" style="font-size: 22px; font-weight: 700; color: var(--pc-cyan); margin-bottom: 20px;">Tu ERP en la nube desde 98€ al mes</p>
+          <p>Publicamos aplicaciones empresariales como Sage, SAP y A3 en entornos cloud seguros para que tu equipo pueda trabajar desde cualquier ubicación. Sustituimos o complementamos el servidor local con una infraestructura gestionada, acceso remoto protegido, copias de seguridad y soporte técnico.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contacto.html">Contacta con nosotros</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="./assets/images/hand-cloud-hero.png" alt="ERP en la nube para Sage, SAP y A3" style="width: 100%; max-width: 380px; height: auto;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section" style="background: var(--pc-white); padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px;">Servidor local vs ERP en la nube</h2>

@@ -107,129 +107,148 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/en/index.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://procloud.info/en/index.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Cloud services, secure access and IT support for SMEs.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/en/index.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "Cloud ERP",
-      "Sage cloud",
-      "SAP cloud",
-      "A3 cloud",
-      "Enterprise cloud",
-      "VPN and remote work",
-      "Zero Trust with Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "AI applied to business processes",
-      "Backup and cybersecurity",
-      "IT support"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "ProCloud Services Catalog",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud ERP",
-            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-            "offers": {
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/en/index.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://procloud.info/en/index.html"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Cloud services, secure access and IT support for SMEs.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/en/index.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "Cloud ERP",
+          "Sage cloud",
+          "SAP cloud",
+          "A3 cloud",
+          "Enterprise cloud",
+          "VPN and remote work",
+          "Zero Trust with Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "AI applied to business processes",
+          "Backup and cybersecurity",
+          "IT support"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ProCloud Services Catalog",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cloud ERP",
+                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "IT support and cloud services"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/en/index.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can ProCloud set up a VPN for secure remote work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. ProCloud designs and configures corporate VPNs so that users can securely access company servers, applications, and files from outside the office."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Sage, SAP, or A3 be run from the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We set up cloud servers, remote desktops, VPNs, or hybrid environments so that applications like Sage, SAP, or A3 run securely and accessibility is guaranteed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with Microsoft 365 and Google Workspace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We configure, migrate, and maintain Microsoft 365, Exchange Online, Teams, SharePoint, OneDrive, Google Workspace, Gmail for business, and Drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this website optimized for Google, ChatGPT, and Gemini?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The layout is built with semantic HTML, clear service sections, FAQs, structured data, and specific pages to facilitate reading by search engines and AI assistants."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/en/index.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Can ProCloud set up a VPN for secure remote work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. ProCloud designs and configures corporate VPNs so that users can securely access company servers, applications, and files from outside the office."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Sage, SAP, or A3 be run from the cloud?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We set up cloud servers, remote desktops, VPNs, or hybrid environments so that applications like Sage, SAP, or A3 run securely and accessibility is guaranteed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work with Microsoft 365 and Google Workspace?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We configure, migrate, and maintain Microsoft 365, Exchange Online, Teams, SharePoint, OneDrive, Google Workspace, Gmail for business, and Drive."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is this website optimized for Google, ChatGPT, and Gemini?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The layout is built with semantic HTML, clear service sections, FAQs, structured data, and specific pages to facilitate reading by search engines and AI assistants."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   

@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/vpn-teletrabajo.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://procloud.info/"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/vpn-teletrabajo.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "VPN empresarial y soluciones de Teletrabajo seguro",
+            "item": "https://procloud.info/vpn-teletrabajo.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "VPN empresarial y soluciones de Teletrabajo seguro",
-        "item": "https://procloud.info/vpn-teletrabajo.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/vpn-teletrabajo.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP en la nube",
-      "Sage en la nube",
-      "SAP en la nube",
-      "A3 en la nube",
-      "Cloud empresarial",
-      "VPN y teletrabajo",
-      "Zero Trust con Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a procesos diarios",
-      "Backup y ciberseguridad",
-      "Soporte IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catálogo de Servicios ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP en la nube",
-            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/vpn-teletrabajo.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP en la nube",
+          "Sage en la nube",
+          "SAP en la nube",
+          "A3 en la nube",
+          "Cloud empresarial",
+          "VPN y teletrabajo",
+          "Zero Trust con Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a procesos diarios",
+          "Backup y ciberseguridad",
+          "Soporte IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Servicios ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP en la nube",
+                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Soporte IT y servicios cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/vpn-teletrabajo.html#service",
+        "name": "VPN y Teletrabajo Seguro",
+        "description": "Configuración de accesos remotos seguros, redes privadas VPN y entornos perimetrales cifrados.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": "VPN y Teletrabajo Seguro",
+        "url": "https://procloud.info/vpn-teletrabajo.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/vpn-teletrabajo.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre VPN y escritorio remoto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La VPN es el túnel cifrado que conecta un equipo externo a la red de la oficina de forma segura. El Escritorio Remoto (RDP) te permite ver y controlar un ordenador o servidor que físicamente está en la oficina."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es necesario cambiar los ordenadores de los empleados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Adaptamos el software cliente de VPN y políticas de seguridad a los equipos existentes (Windows o macOS) de tu equipo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El acceso remoto ralentiza el trabajo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La velocidad de carga y respuesta de la VPN depende principalmente de la velocidad de Internet de tu oficina y del empleado, no de la VPN en sí misma."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/vpn-teletrabajo.html#service",
-    "name": "VPN y Teletrabajo Seguro",
-    "description": "Configuración de accesos remotos seguros, redes privadas VPN y entornos perimetrales cifrados.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "serviceType": "VPN y Teletrabajo Seguro",
-    "url": "https://procloud.info/vpn-teletrabajo.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/vpn-teletrabajo.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué diferencia hay entre VPN y escritorio remoto?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La VPN es el túnel cifrado que conecta un equipo externo a la red de la oficina de forma segura. El Escritorio Remoto (RDP) te permite ver y controlar un ordenador o servidor que físicamente está en la oficina."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es necesario cambiar los ordenadores de los empleados?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Adaptamos el software cliente de VPN y políticas de seguridad a los equipos existentes (Windows o macOS) de tu equipo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿El acceso remoto ralentiza el trabajo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La velocidad de carga y respuesta de la VPN depende principalmente de la velocidad de Internet de tu oficina y del empleado, no de la VPN en sí misma."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">VPN SERVICES</div>
+          <h1 id="seo-hero-title">VPN y Teletrabajo</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Acceso remoto seguro y cifrado para conectar a tus trabajadores con la oficina.</p>
+          <p>Habilitar el teletrabajo no debe comprometer la seguridad de tu red. Implementamos soluciones de acceso remoto seguro a través de cortafuegos perimetrales y redes privadas virtuales (VPN) cifradas, garantizando que el acceso a carpetas, bases de datos y software central de tu pyme esté blindado.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contacto.html">Contacta con nosotros</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="./assets/images/hero-cloud-illustration.png" alt="VPN empresarial y soluciones de Teletrabajo seguro | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section" style="background: var(--pc-white); padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px;">VPN tradicional vs Zero Trust</h2>

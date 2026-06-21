@@ -107,129 +107,148 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/index.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/index.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/index.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/index.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/index.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Pot ProCloud muntar una VPN per a teletreball segur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. ProCloud dissenya i configura VPN empresarials perquè els usuaris accedeixin a servidors, aplicacions i arxius de l'empresa de forma segura des de fora de l'oficina."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es pot fer servir Sage, SAP o A3 des de cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Podem preparar servidors cloud, escriptoris remots, VPN o entorns híbrids perquè aplicacions com Sage, SAP o A3 funcionin de forma segura i accessible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Treballeu amb Microsoft 365 i Google Workspace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Configurem, migrem i mantenim Microsoft 365, Exchange Online, Teams, SharePoint, OneDrive, Google Workspace, Gmail empresarial i Drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La web està preparada perquè l'entenguin Google, ChatGPT i Gemini?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'estructura està dissenyada amb HTML semàntic, serveis clars, preguntes freqüents, dades estructurades i pàgines específiques per facilitar la seva lectura per cercadors i assistents d'IA."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/index.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Pot ProCloud muntar una VPN per a teletreball segur?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. ProCloud dissenya i configura VPN empresarials perquè els usuaris accedeixin a servidors, aplicacions i arxius de l'empresa de forma segura des de fora de l'oficina."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es pot fer servir Sage, SAP o A3 des de cloud?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Podem preparar servidors cloud, escriptoris remots, VPN o entorns híbrids perquè aplicacions com Sage, SAP o A3 funcionin de forma segura i accessible."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Treballeu amb Microsoft 365 i Google Workspace?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Configurem, migrem i mantenim Microsoft 365, Exchange Online, Teams, SharePoint, OneDrive, Google Workspace, Gmail empresarial i Drive."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿La web està preparada perquè l'entenguin Google, ChatGPT i Gemini?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "L'estructura està dissenyada amb HTML semàntic, serveis clars, preguntes freqüents, dades estructurades i pàgines específiques per facilitar la seva lectura per cercadors i assistents d'IA."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   

@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/microsoft-365-empreses.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/microsoft-365-empreses.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Microsoft 365 per a empreses",
+            "item": "https://procloud.info/ca/microsoft-365-empreses.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Microsoft 365 per a empreses",
-        "item": "https://procloud.info/ca/microsoft-365-empreses.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/microsoft-365-empreses.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/microsoft-365-empreses.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ca/microsoft-365-empreses.html#service",
+        "name": "Microsoft 365 per a empreses",
+        "description": "Migració, suport i gestió de Microsoft 365, Exchange Online, Teams i SharePoint.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "serviceType": "Microsoft 365 per a empreses",
+        "url": "https://procloud.info/ca/microsoft-365-empreses.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/microsoft-365-empreses.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Què passa amb els meus correus antics en la migració?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Els migrem de manera íntegra. Tota la teva bústia (historial de missatges, carpetas, contactes i calendari) es copia al teu nou compte d'Exchange Online sense pèrdues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Puc utilitzar Teams i SharePoint des del mòbil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Microsoft 365 disposa d'aplicacions natives segures per a Android i iOS, per la qual cosa pots xatejar, accedir a fitxers i unir-te a reunions siguis on siguis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "És segur emmagatzemar documents a SharePoint?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extremadament segur. SharePoint compta amb xifrat en trànsit i en repòs, historial de versions per recuperar fitxers modificats i paperera de reciclatge avançada."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ca/microsoft-365-empreses.html#service",
-    "name": "Microsoft 365 per a empreses",
-    "description": "Migració, suport i gestió de Microsoft 365, Exchange Online, Teams i SharePoint.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "serviceType": "Microsoft 365 per a empreses",
-    "url": "https://procloud.info/ca/microsoft-365-empreses.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/microsoft-365-empreses.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Què passa amb els meus correus antics en la migració?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Els migrem de manera íntegra. Tota la teva bústia (historial de missatges, carpetas, contactes i calendari) es copia al teu nou compte d'Exchange Online sense pèrdues."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Puc utilitzar Teams i SharePoint des del mòbil?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Microsoft 365 disposa d'aplicacions natives segures per a Android i iOS, per la qual cosa pots xatejar, accedir a fitxers i unir-te a reunions siguis on siguis."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "És segur emmagatzemar documents a SharePoint?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Extremadament segur. SharePoint compta amb xifrat en trànsit i en repòs, historial de versions per recuperar fitxers modificats i paperera de reciclatge avançada."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -339,10 +358,60 @@
     </section>
 
     <!-- FAQ -->
-    <section class="pc-section" aria-labelledby="faq-title">
+        <!-- TABLA COMPARATIVA -->
+    <section class="pc-section pc-section-light" style="padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Microsoft 365 sense estructura vs Microsoft 365 gestionat</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Característica</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">M365 sense estructura</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">M365 gestionat per ProCloud</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Organització documental</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Carpetes caòtiques, duplicats freqüents i dificultat per trobar fitxers.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Estructura clara de SharePoint, sincronització eficient i control de versions.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Seguretat</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Configuració per defecte, vulnerable a phishing i sense doble factor obligatori.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Polítiques de MFA obligatòries, filtratge avançat de correu i protecció d'identitats.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Permisos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Comptes compartits, accessos excessius i falta de control sobre qui veu què.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Accessos restringits per rol (mínim privilegi) i auditoria de compartició externa.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Còpies de seguretat</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Es confia en la retenció per defecte de Microsoft (que no és un backup real).</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Còpia de seguretat externa diària i automatitzada de bústies i SharePoint.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Treball remot</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Dificultats d'accés, connexions lentes i sense control del dispositiu.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Accés segur des de qualsevol lloc amb polítiques de dispositius aprovats.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Suport</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Incidències lentes de resoldre, sense tècnic assignat i canal de suport genèric.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Suport informàtic proactiu, resolució ràpida i tracte directe amb especialistes.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>
-        <h2 id="faq-title" style="text-align: center; margin-bottom: 40px;">Preguntas Frecuentes</h2>
+        <h2 id="faq-title" style="text-align: center; margin-bottom: 40px;">Preguntes Freqüents</h2>
         <div class="pc-faq">
           
           <details style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--pc-mid); border-radius: 12px; background: var(--pc-white);">

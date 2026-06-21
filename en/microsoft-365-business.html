@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/en/microsoft-365-business.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://procloud.info/en/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/en/microsoft-365-business.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://procloud.info/en/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Microsoft 365 for Business",
+            "item": "https://procloud.info/en/microsoft-365-business.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Microsoft 365 for Business",
-        "item": "https://procloud.info/en/microsoft-365-business.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Cloud services, secure access and IT support for SMEs.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/en/microsoft-365-business.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "Cloud ERP",
-      "Sage cloud",
-      "SAP cloud",
-      "A3 cloud",
-      "Enterprise cloud",
-      "VPN and remote work",
-      "Zero Trust with Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "AI applied to business processes",
-      "Backup and cybersecurity",
-      "IT support"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "ProCloud Services Catalog",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud ERP",
-            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Cloud services, secure access and IT support for SMEs.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/en/microsoft-365-business.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "Cloud ERP",
+          "Sage cloud",
+          "SAP cloud",
+          "A3 cloud",
+          "Enterprise cloud",
+          "VPN and remote work",
+          "Zero Trust with Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "AI applied to business processes",
+          "Backup and cybersecurity",
+          "IT support"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ProCloud Services Catalog",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cloud ERP",
+                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "IT support and cloud services"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/en/microsoft-365-business.html#service",
+        "name": "Microsoft 365 for Business",
+        "description": "Migration, support, and management of Microsoft 365, Exchange Online, Teams, and SharePoint.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "serviceType": "Microsoft 365 for Business",
+        "url": "https://procloud.info/en/microsoft-365-business.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/en/microsoft-365-business.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What happens to my old email during migration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We migrate your mailboxes completely. All emails, folders, contacts, and calendar records are replicated to Exchange Online without data loss."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I access Teams and SharePoint from my mobile device?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Microsoft provides secure native mobile apps for iOS and Android, allowing you to access files and join meetings securely on the go."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is storing documents in SharePoint safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extremely. SharePoint features enterprise-grade encryption in transit and at rest, file version histories, and solid backup restoration systems."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/en/microsoft-365-business.html#service",
-    "name": "Microsoft 365 for Business",
-    "description": "Migration, support, and management of Microsoft 365, Exchange Online, Teams, and SharePoint.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "serviceType": "Microsoft 365 for Business",
-    "url": "https://procloud.info/en/microsoft-365-business.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/en/microsoft-365-business.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What happens to my old email during migration?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We migrate your mailboxes completely. All emails, folders, contacts, and calendar records are replicated to Exchange Online without data loss."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I access Teams and SharePoint from my mobile device?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Microsoft provides secure native mobile apps for iOS and Android, allowing you to access files and join meetings securely on the go."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is storing documents in SharePoint safe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Extremely. SharePoint features enterprise-grade encryption in transit and at rest, file version histories, and solid backup restoration systems."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -339,7 +358,57 @@
     </section>
 
     <!-- FAQ -->
-    <section class="pc-section" aria-labelledby="faq-title">
+        <!-- TABLA COMPARATIVA -->
+    <section class="pc-section pc-section-light" style="padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Unstructured Microsoft 365 vs Managed Microsoft 365</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Feature</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Unstructured M365</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">M365 Managed by ProCloud</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Document organization</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Chaotic folder structures, frequent duplicates and difficulty finding files.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Clear SharePoint architecture, efficient synchronization and file version control.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Security</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Default configurations, vulnerable to phishing and no mandatory MFA.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Mandatory Multi-Factor Authentication, advanced mail filtering and identity protection.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Permissions</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Shared accounts, excessive access rights and lack of control over data visibility.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Role-based restricted access (least privilege) and external sharing audits.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Backups</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Reliance on Microsoft's default retention policies (not a true backup).</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Automated daily external backup of mailboxes, Teams and SharePoint data.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Remote work</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Connection issues, slow file loading and no device security control.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Secure remote access from anywhere with approved device policies.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Support</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Slow incident resolution, no dedicated engineer and generic support lines.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Proactive IT support, rapid resolution and direct contact with specialists.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>
         <h2 id="faq-title" style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>

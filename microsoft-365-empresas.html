@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/microsoft-365-empresas.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://procloud.info/"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/microsoft-365-empresas.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Microsoft 365 para empresas",
+            "item": "https://procloud.info/microsoft-365-empresas.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Microsoft 365 para empresas",
-        "item": "https://procloud.info/microsoft-365-empresas.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/microsoft-365-empresas.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP en la nube",
-      "Sage en la nube",
-      "SAP en la nube",
-      "A3 en la nube",
-      "Cloud empresarial",
-      "VPN y teletrabajo",
-      "Zero Trust con Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a procesos diarios",
-      "Backup y ciberseguridad",
-      "Soporte IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catálogo de Servicios ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP en la nube",
-            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/microsoft-365-empresas.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP en la nube",
+          "Sage en la nube",
+          "SAP en la nube",
+          "A3 en la nube",
+          "Cloud empresarial",
+          "VPN y teletrabajo",
+          "Zero Trust con Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a procesos diarios",
+          "Backup y ciberseguridad",
+          "Soporte IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Servicios ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP en la nube",
+                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Soporte IT y servicios cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/microsoft-365-empresas.html#service",
+        "name": "Microsoft 365 para empresas",
+        "description": "Migración, soporte y gestión de Microsoft 365, Exchange Online, Teams y SharePoint.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": "Microsoft 365 para empresas",
+        "url": "https://procloud.info/microsoft-365-empresas.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/microsoft-365-empresas.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa con mis correos antiguos en la migración?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los migramos de forma íntegra. Todo tu buzón (historial de mensajes, carpetas, contactos y calendario) se copia a tu nueva cuenta de Exchange Online sin pérdidas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo usar Teams y SharePoint desde el móvil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Microsoft 365 cuenta con aplicaciones nativas seguras para Android e iOS, por lo que puedes chatear, acceder a archivos y unirte a reuniones estés donde estés."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es seguro almacenar documentos en SharePoint?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extremadamente seguro. SharePoint cuenta con cifrado en tránsito y en reposo, historial de versiones para recuperar archivos modificados y papelera de reciclaje avanzada."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/microsoft-365-empresas.html#service",
-    "name": "Microsoft 365 para empresas",
-    "description": "Migración, soporte y gestión de Microsoft 365, Exchange Online, Teams y SharePoint.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "serviceType": "Microsoft 365 para empresas",
-    "url": "https://procloud.info/microsoft-365-empresas.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/microsoft-365-empresas.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué pasa con mis correos antiguos en la migración?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Los migramos de forma íntegra. Todo tu buzón (historial de mensajes, carpetas, contactos y calendario) se copia a tu nueva cuenta de Exchange Online sin pérdidas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo usar Teams y SharePoint desde el móvil?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Microsoft 365 cuenta con aplicaciones nativas seguras para Android e iOS, por lo que puedes chatear, acceder a archivos y unirte a reuniones estés donde estés."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is storing documents in SharePoint safe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Extremadamente seguro. SharePoint cuenta con cifrado en tránsito y en reposo, historial de versiones para recuperar archivos modificados y papelera de reciclaje avanzada."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -339,7 +358,57 @@
     </section>
 
     <!-- FAQ -->
-    <section class="pc-section" aria-labelledby="faq-title">
+        <!-- TABLA COMPARATIVA -->
+    <section class="pc-section pc-section-light" style="padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Microsoft 365 sin estructura vs Microsoft 365 gestionado</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Característica</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">M365 sin estructura</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">M365 gestionado por ProCloud</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Organización documental</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Carpetas caóticas, duplicados frecuentes y dificultad para encontrar archivos.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Estructura clara de SharePoint, sincronización eficiente y control de versiones.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Seguridad</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Configuración por defecto, vulnerable a phishing y sin doble factor obligatorio.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Políticas de MFA obligatorias, filtrado avanzado de correo y protección de identidades.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Permisos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Cuentas compartidas, accesos excesivos y falta de control sobre quién ve qué.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Accesos restringidos por rol (mínimo privilegio) y auditoría de compartición externa.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Copias de seguridad</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Se confía en la retención por defecto de Microsoft (que no es un backup real).</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Copia de seguridad externa diaria y automatizada de buzones y SharePoint.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Trabajo remoto</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Dificultades de acceso, conexiones lentas y sin control del dispositivo.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Acceso seguro desde cualquier lugar con políticas de dispositivos aprobados.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Soporte</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Incidencias lentas de resolver, sin técnico asignado y canal de soporte genérico.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Soporte informático proactivo, resolución rápida y trato directo con especialistas.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>
         <h2 id="faq-title" style="text-align: center; margin-bottom: 40px;">Preguntas Frecuentes</h2>
@@ -354,7 +423,7 @@
             <p style="margin-top: 12px; color: var(--pc-muted);">Sí. Microsoft 365 cuenta con aplicaciones nativas seguras para Android e iOS, por lo que puedes chatear, acceder a archivos y unirte a reuniones estés donde estés.</p>
           </details>
           <details style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--pc-mid); border-radius: 12px; background: var(--pc-white);">
-            <summary style="font-weight: 700; cursor: pointer; color: var(--pc-navy);">Is storing documents in SharePoint safe?</summary>
+            <summary style="font-weight: 700; cursor: pointer; color: var(--pc-navy);">¿Es seguro almacenar documentos en SharePoint?</summary>
             <p style="margin-top: 12px; color: var(--pc-muted);">Extremadamente seguro. SharePoint cuenta con cifrado en tránsito y en reposo, historial de versiones para recuperar archivos modificados y papelera de reciclaje avanzada.</p>
           </details>
         </div>

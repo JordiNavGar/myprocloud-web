@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/sage-al-nuvol.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/sage-al-nuvol.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sage al núvol per a PIMEs",
+            "item": "https://procloud.info/ca/sage-al-nuvol.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Sage al núvol per a PIMEs",
-        "item": "https://procloud.info/ca/sage-al-nuvol.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/sage-al-nuvol.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/sage-al-nuvol.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ca/sage-al-nuvol.html#service",
+        "name": "Sage al núvol",
+        "description": "Migració i allotjament de Sage 50, Sage 200 i Sage Murano en servidors cloud VPS optimitzats.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "serviceType": "Sage al núvol",
+        "url": "https://procloud.info/ca/sage-al-nuvol.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/sage-al-nuvol.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Puc utilitzar Sage des de fora de l'oficina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Tota l'aplicació i les seves dades s'executen al servidor al núvol, de manera que el teu equip pot accedir-hi de manera segura mitjançant credencials VPN des de qualsevol lloc amb connexió a Internet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Què passa amb la llicència actual de Sage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mantens la teva llicència de Sage. Nosaltres ens encarreguem de migrar el teu programari i configurar les bases de dades al núvol sense que hagis de comprar noves llicències de l'ERP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Com es realitzen les còpies de seguretat de Sage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Realitzem còpies de seguretat completes diàries amb Veeam Backup, guardades en una ubicació externa xifrada, la qual cosa et garanteix una recuperació ràpida en cas d'error administratiu."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ca/sage-al-nuvol.html#service",
-    "name": "Sage al núvol",
-    "description": "Migració i allotjament de Sage 50, Sage 200 i Sage Murano en servidors cloud VPS optimitzats.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "serviceType": "Sage al núvol",
-    "url": "https://procloud.info/ca/sage-al-nuvol.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/sage-al-nuvol.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Puc utilitzar Sage des de fora de l'oficina?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Tota l'aplicació i les seves dades s'executen al servidor al núvol, de manera que el teu equip pot accedir-hi de manera segura mitjançant credencials VPN des de qualsevol lloc amb connexió a Internet."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Què passa amb la llicència actual de Sage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Mantens la teva llicència de Sage. Nosaltres ens encarreguem de migrar el teu programari i configurar les bases de dades al núvol sense que hagis de comprar noves llicències de l'ERP."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Com es realitzen les còpies de seguretat de Sage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Realitzem còpies de seguretat completes diàries amb Veeam Backup, guardades en una ubicació externa xifrada, la qual cosa et garanteix una recuperació ràpida en cas d'error administratiu."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   

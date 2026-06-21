@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/sap-al-nuvol.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/sap-al-nuvol.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SAP Business One al núvol",
+            "item": "https://procloud.info/ca/sap-al-nuvol.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "SAP Business One al núvol",
-        "item": "https://procloud.info/ca/sap-al-nuvol.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/sap-al-nuvol.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/sap-al-nuvol.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ca/sap-al-nuvol.html#service",
+        "name": "SAP al núvol",
+        "description": "Migració de SAP Business One a servidors cloud dedicats amb rendiment NVMe i còpies Veeam.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "serviceType": "SAP al núvol",
+        "url": "https://procloud.info/ca/sap-al-nuvol.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ca/sap-al-nuvol.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP pot funcionar en un entorn cloud privat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Configurem un servidor privat amb els recursos exactos que requereix el teu SAP (HANA o SQL) per a un funcionament àgil i sense interferències d'altres usuaris."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'accés remot a SAP és segur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Totalment. L'accés es realitza mitjançant túnels VPN xifrats empresarials i passarel·les RDP protegides amb doble factor d'autenticació (MFA) per bloquejar accessos no autoritzats."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Com es gestionen les caigudes o incidents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El nostre sistema monitoritza el servidor SAP 24/7. Davant de qualsevol anomalia de rendiment o caiguda de xarxa, els nostres enginyers intervenen immediatament per restablir el servei."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ca/sap-al-nuvol.html#service",
-    "name": "SAP al núvol",
-    "description": "Migració de SAP Business One a servidors cloud dedicats amb rendiment NVMe i còpies Veeam.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "serviceType": "SAP al núvol",
-    "url": "https://procloud.info/ca/sap-al-nuvol.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ca/sap-al-nuvol.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "SAP pot funcionar en un entorn cloud privat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Configurem un servidor privat amb els recursos exactos que requereix el teu SAP (HANA o SQL) per a un funcionament àgil i sense interferències d'altres usuaris."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "L'accés remot a SAP és segur?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Totalment. L'accés es realitza mitjançant túnels VPN xifrats empresarials i passarel·les RDP protegides amb doble factor d'autenticació (MFA) per bloquejar accessos no autoritzats."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Com es gestionen les caigudes o incidents?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "El nostre sistema monitoritza el servidor SAP 24/7. Davant de qualsevol anomalia de rendiment o caiguda de xarxa, els nostres enginyers intervenen immediatament per restablir el servei."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   

@@ -94,130 +94,152 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ca/blog/copia-immutable-ransomware.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inici",
-        "item": "https://procloud.info/ca/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ca/blog/copia-immutable-ransomware.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inici",
+            "item": "https://procloud.info/ca/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "La importància de la còpia immutable contra el ransomware",
+            "item": "https://procloud.info/ca/blog/copia-immutable-ransomware.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "La importància de la còpia immutable contra el ransomware",
-        "item": "https://procloud.info/ca/blog/copia-immutable-ransomware.html"
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ca/blog/copia-immutable-ransomware.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Espanya"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP al núvol",
+          "Sage al núvol",
+          "SAP al núvol",
+          "A3 al núvol",
+          "Cloud empresarial",
+          "VPN i teletreball",
+          "Zero Trust amb Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a processos diaris",
+          "Backup i ciberseguretat",
+          "Suport IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catàleg de Serveis ProCloud",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP al núvol",
+                "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Suport IT i serveis cloud"
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://procloud.info/ca/blog/copia-immutable-ransomware.html#article",
+        "isPartOf": {
+          "@id": "https://procloud.info/ca/blog/copia-immutable-ransomware.html#webpage"
+        },
+        "headline": "La importància de la còpia immutable contra el ransomware",
+        "description": "Protegeix la teva empresa davant el ransomware amb còpies de seguretat externes, verificades i immutables.",
+        "inLanguage": "ca",
+        "mainEntityOfPage": "https://procloud.info/ca/blog/copia-immutable-ransomware.html",
+        "datePublished": "2026-05-24T09:00:00+02:00",
+        "dateModified": "2026-05-24T09:00:00+02:00",
+        "author": {
+          "@type": "Person",
+          "name": "Jordi Navarro",
+          "email": "jordi@procloud.info",
+          "jobTitle": "Especialista en infraestructura cloud i suport IT",
+          "knowsAbout": [
+            "ERP al núvol",
+            "Sage",
+            "SAP",
+            "A3",
+            "Microsoft 365",
+            "Cloudflare Zero Trust",
+            "VPN",
+            "Backup",
+            "Ciberseguretat",
+            "IA aplicada a processos"
+          ]
+        },
+        "publisher": {
+          "@id": "https://procloud.info/#organization"
+        },
+        "image": "https://procloud.info/assets/og/procloud-og.jpg",
+        "articleSection": "Backup & Cloud"
       }
     ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofereix serveis cloud, ERP al núvol per a Sage, SAP i A3, accés remot segur, Microsoft 365, IA aplicada, còpia de seguretat, ciberseguretat i suport IT per a empreses."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Serveis cloud, accés remot segur i suport tècnic informàtic per a pimes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ca/blog/copia-immutable-ransomware.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Espanya"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP al núvol",
-      "Sage al núvol",
-      "SAP al núvol",
-      "A3 al núvol",
-      "Cloud empresarial",
-      "VPN i teletreball",
-      "Zero Trust amb Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a processos diaris",
-      "Backup i ciberseguretat",
-      "Suport IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catàleg de Serveis ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP al núvol",
-            "description": "Servei de publicació i migració d'ERP (Sage, SAP, A3) al cloud des de 98€ al mes.",
-            "offers": {
-              "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "BlogPosting",
-    "@id": "https://procloud.info/ca/blog/copia-immutable-ransomware.html#blogpost",
-    "headline": "La importància de la còpia immutable contra el ransomware",
-    "description": "Protegeix la teva empresa davant el ransomware amb còpies de seguretat externes, verificades i immutables.",
-    "image": "https://procloud.info/assets/og/procloud-og.jpg",
-    "datePublished": "2026-06-10T09:00:00+02:00",
-    "dateModified": "2026-06-20T10:00:00+02:00",
-    "author": {
-      "@type": "Person",
-      "name": "Jordi Navarro",
-      "email": "jordi@procloud.info",
-      "jobTitle": "Especialista en infraestructura cloud i suport IT",
-      "knowsAbout": [
-        "ERP al núvol",
-        "Sage al núvol",
-        "SAP al núvol",
-        "A3 al núvol",
-        "Cloud empresarial",
-        "VPN i teletreball",
-        "Zero Trust amb Cloudflare",
-        "Microsoft 365",
-        "Google Workspace",
-        "IA aplicada a processos diaris",
-        "Backup i ciberseguretat",
-        "Suport IT"
-      ]
-    },
-    "publisher": {
-      "@id": "https://procloud.info/#organization"
-    },
-    "mainEntityOfPage": "https://procloud.info/ca/blog/copia-immutable-ransomware.html"
-  }
-]
   }
   </script>
   
@@ -261,14 +283,16 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
-
-    
-  
-
-    
-  
+    <section class="pc-hero" aria-labelledby="post-title">
+      <div class="pc-container" style="max-width: 800px; text-align: center;">
+        <div class="pc-headerline" style="text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: var(--pc-cyan); font-size: 14px;">Backup &amp; Cloud &bull; 24 May 2026</div>
+        <h1 id="post-title" style="font-size: 2.8rem; font-weight: 800; color: var(--pc-white); margin-top: 15px; line-height: 1.25;">La importància de la còpia immutable contra el ransomware</h1>
+        <p class="pc-post-author" style="color: rgba(255,255,255,0.85); font-size: 14.5px; margin-top: 20px; font-style: italic; line-height: 1.5;">
+          <strong>Autor:</strong> Jordi Navarro<br>
+          <span style="font-size: 13px; color: rgba(255,255,255,0.7);">Especialista en infraestructura cloud, Microsoft 365, accés remot segur, backup, suport IT i entorns Zero Trust amb Cloudflare.</span>
+        </p>
+      </div>
+    </section>
 
     <section class="pc-section pc-section-light" style="padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">

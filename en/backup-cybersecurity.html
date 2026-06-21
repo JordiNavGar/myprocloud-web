@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/en/backup-cybersecurity.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://procloud.info/en/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/en/backup-cybersecurity.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://procloud.info/en/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Veeam Backup and Cybersecurity Solutions",
+            "item": "https://procloud.info/en/backup-cybersecurity.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Veeam Backup and Cybersecurity Solutions",
-        "item": "https://procloud.info/en/backup-cybersecurity.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Cloud services, secure access and IT support for SMEs.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/en/backup-cybersecurity.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "Cloud ERP",
-      "Sage cloud",
-      "SAP cloud",
-      "A3 cloud",
-      "Enterprise cloud",
-      "VPN and remote work",
-      "Zero Trust with Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "AI applied to business processes",
-      "Backup and cybersecurity",
-      "IT support"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "ProCloud Services Catalog",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud ERP",
-            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Cloud services, secure access and IT support for SMEs.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/en/backup-cybersecurity.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "Cloud ERP",
+          "Sage cloud",
+          "SAP cloud",
+          "A3 cloud",
+          "Enterprise cloud",
+          "VPN and remote work",
+          "Zero Trust with Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "AI applied to business processes",
+          "Backup and cybersecurity",
+          "IT support"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ProCloud Services Catalog",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cloud ERP",
+                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "IT support and cloud services"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/en/backup-cybersecurity.html#service",
+        "name": "Backup & Cybersecurity",
+        "description": "Immutable Veeam backups against ransomware and Zero Trust network protection.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "serviceType": "Backup & Cybersecurity",
+        "url": "https://procloud.info/en/backup-cybersecurity.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/en/backup-cybersecurity.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What happens to backups if a ransomware attack occurs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We write backups to immutable Veeam cloud nodes. Once written, the backup files are read-only and cannot be altered or deleted by malware."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often are backups executed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically, full backups run automatically every night. We can configure more frequent sync cycles depending on your database load."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to invest in expensive hardware?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We optimize our firewall rules and backup protocols to run seamlessly on your current systems and routers."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/en/backup-cybersecurity.html#service",
-    "name": "Backup & Cybersecurity",
-    "description": "Immutable Veeam backups against ransomware and Zero Trust network protection.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "serviceType": "Backup & Cybersecurity",
-    "url": "https://procloud.info/en/backup-cybersecurity.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/en/backup-cybersecurity.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What happens to backups if a ransomware attack occurs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We write backups to immutable Veeam cloud nodes. Once written, the backup files are read-only and cannot be altered or deleted by malware."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How often are backups executed?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Typically, full backups run automatically every night. We can configure more frequent sync cycles depending on your database load."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need to invest in expensive hardware?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We optimize our firewall rules and backup protocols to run seamlessly on your current systems and routers."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">BACKUP SERVICES</div>
+          <h1 id="seo-hero-title">Backup & Cybersecurity</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Robust system safeguarding against data breaches, loss, and cyber-attacks.</p>
+          <p>Your company's survival depends on protecting its digital assets. We deploy secure network firewalls to block external cyber-attacks and configure automated, off-site backups via Veeam Backup to ensure your databases and files can be instantly restored.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contact.html">Contact us</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="../assets/images/hero-cloud-illustration.png" alt="Veeam Backup and Cybersecurity Solutions | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section" style="background: var(--pc-white); padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px;">Traditional Backup vs Immutable Copy</h2>

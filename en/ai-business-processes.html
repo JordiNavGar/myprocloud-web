@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/en/ai-business-processes.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://procloud.info/en/index.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/en/ai-business-processes.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://procloud.info/en/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI Consulting for Administrative Processes",
+            "item": "https://procloud.info/en/ai-business-processes.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "AI Consulting for Administrative Processes",
-        "item": "https://procloud.info/en/ai-business-processes.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Cloud services, secure access and IT support for SMEs.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/en/ai-business-processes.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "Cloud ERP",
-      "Sage cloud",
-      "SAP cloud",
-      "A3 cloud",
-      "Enterprise cloud",
-      "VPN and remote work",
-      "Zero Trust with Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "AI applied to business processes",
-      "Backup and cybersecurity",
-      "IT support"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "ProCloud Services Catalog",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cloud ERP",
-            "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Cloud services, secure access and IT support for SMEs.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/en/ai-business-processes.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "Cloud ERP",
+          "Sage cloud",
+          "SAP cloud",
+          "A3 cloud",
+          "Enterprise cloud",
+          "VPN and remote work",
+          "Zero Trust with Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "AI applied to business processes",
+          "Backup and cybersecurity",
+          "IT support"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "ProCloud Services Catalog",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cloud ERP",
+                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "IT support and cloud services"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/en/ai-business-processes.html#service",
+        "name": "AI applied to processes",
+        "description": "Automation of daily tasks, email processing, summary generation, and reports using Artificial Intelligence.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        "serviceType": "AI applied to processes",
+        "url": "https://procloud.info/en/ai-business-processes.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/en/ai-business-processes.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is applied AI secure for company data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We configure proprietary API integrations ensuring that your business data remains secure, private, and compliant with RGPD regulations. We do not feed public models."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do employees need coding skills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not at all. We handle all software engineering, integrations, and customization, delivering intuitive tools your staff can use immediately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does implementation take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "First-stage automated workflows and email templates are generally fully operational within weeks after the initial audit phase."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/en/ai-business-processes.html#service",
-    "name": "AI applied to processes",
-    "description": "Automation of daily tasks, email processing, summary generation, and reports using Artificial Intelligence.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Spain"
-    },
-    "serviceType": "AI applied to processes",
-    "url": "https://procloud.info/en/ai-business-processes.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/en/ai-business-processes.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is applied AI secure for company data?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We configure proprietary API integrations ensuring that your business data remains secure, private, and compliant with RGPD regulations. We do not feed public models."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do employees need coding skills?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Not at all. We handle all software engineering, integrations, and customization, delivering intuitive tools your staff can use immediately."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does implementation take?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "First-stage automated workflows and email templates are generally fully operational within weeks after the initial audit phase."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">IA SERVICES</div>
+          <h1 id="seo-hero-title">AI applied to business processes</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Optimize your administrative workflows with practical Artificial Intelligence integrations.</p>
+          <p>We analyze repetitive tasks and administrative workflows to apply Artificial Intelligence where it truly adds value: automation, summarization, doc draft generation, email handling, custom report compiling, client support, and internal coordination.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contact.html">Contact us</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="../assets/images/hero-cloud-illustration.png" alt="AI Consulting for Administrative Processes | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section pc-section-light" style="padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Common use cases</h2>
@@ -298,6 +326,61 @@
       </div>
     </section>
   
+    <!-- TABLA COMPARATIVA -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Manual Processes vs AI Applied to Processes</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Area</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Manual Processes</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">AI Applied to Processes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Repetitive tasks</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Manual data entry, copying information and slow administrative work.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Intelligent automation extracting data from invoices or receipts error-free.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Summarization</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Reading long email threads or lengthy documents, consuming valuable time.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Instant generation of summaries for meetings, audio files, minutes and contracts.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Documents</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Drafting and formatting proposals, templates or communications from scratch.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Assisted drafting of contracts and documents populated directly from databases.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Emails</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Drafting individual replies to frequent customer queries.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Quick generation of professional, customized answers categorized by topic.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Reports</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Manual data gathering from various sources and tedious formatting.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Automated creation of visual reports cross-referencing multiple ERP systems.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Internal organization</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Reliance on employee memory to follow workflows and archive documents.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Automated digital workflows and structured, intelligent document storage.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Response time</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Hours or days depending on staff workload and availability.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Seconds for data analysis and minutes for processing pipelines.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
 <section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>

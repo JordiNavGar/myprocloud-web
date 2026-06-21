@@ -92,142 +92,161 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-  {
-    "@type": "BreadcrumbList",
-    "@id": "https://procloud.info/ia-aplicada-a-procesos.html#breadcrumb",
-    "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://procloud.info/"
+        "@type": "BreadcrumbList",
+        "@id": "https://procloud.info/ia-aplicada-a-procesos.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://procloud.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Consultoría de IA aplicada a procesos administrativos",
+            "item": "https://procloud.info/ia-aplicada-a-procesos.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Consultoría de IA aplicada a procesos administrativos",
-        "item": "https://procloud.info/ia-aplicada-a-procesos.html"
-      }
-    ]
-  },
-  {
-    "@type": "Organization",
-    "@id": "https://procloud.info/#organization",
-    "name": "ProCloud",
-    "url": "https://procloud.info/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://procloud.info/assets/images/procloud-icon.png",
-      "caption": "ProCloud Logo"
-    },
-    "email": "jordi@procloud.info",
-    "areaServed": "ES",
-    "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas."
-  },
-  {
-    "@type": "ProfessionalService",
-    "@id": "https://procloud.info/#serviceProvider",
-    "name": "ProCloud",
-    "image": "https://procloud.info/assets/images/procloud-icon.png",
-    "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
-    "email": "jordi@procloud.info",
-    "url": "https://procloud.info/ia-aplicada-a-procesos.html",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "knowsAbout": [
-      "ERP en la nube",
-      "Sage en la nube",
-      "SAP en la nube",
-      "A3 en la nube",
-      "Cloud empresarial",
-      "VPN y teletrabajo",
-      "Zero Trust con Cloudflare",
-      "Microsoft 365",
-      "Google Workspace",
-      "IA aplicada a procesos diarios",
-      "Backup y ciberseguridad",
-      "Soporte IT"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Catálogo de Servicios ProCloud",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ERP en la nube",
-            "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-            "offers": {
+        "@type": "Organization",
+        "@id": "https://procloud.info/#organization",
+        "name": "ProCloud",
+        "url": "https://procloud.info/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://procloud.info/assets/images/procloud-icon.png",
+          "caption": "ProCloud Logo"
+        },
+        "email": "jordi@procloud.info",
+        "areaServed": "ES",
+        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://procloud.info/#serviceProvider",
+        "name": "ProCloud",
+        "image": "https://procloud.info/assets/images/procloud-icon.png",
+        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+        "email": "jordi@procloud.info",
+        "url": "https://procloud.info/ia-aplicada-a-procesos.html",
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "knowsAbout": [
+          "ERP en la nube",
+          "Sage en la nube",
+          "SAP en la nube",
+          "A3 en la nube",
+          "Cloud empresarial",
+          "VPN y teletrabajo",
+          "Zero Trust con Cloudflare",
+          "Microsoft 365",
+          "Google Workspace",
+          "IA aplicada a procesos diarios",
+          "Backup y ciberseguridad",
+          "Soporte IT"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Servicios ProCloud",
+          "itemListElement": [
+            {
               "@type": "Offer",
-              "price": "98.00",
-              "priceCurrency": "EUR"
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP en la nube",
+                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "98.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rial Pascual 27-29",
+          "postalCode": "08358",
+          "addressLocality": "Arenys de Munt",
+          "addressRegion": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "serviceType": "Soporte IT y servicios cloud"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://procloud.info/ia-aplicada-a-procesos.html#service",
+        "name": "IA aplicada a procesos",
+        "description": "Automatización de procesos diarios, análisis de correos, generación de resúmenes e informes mediante Inteligencia Artificial.",
+        "provider": {
+          "@id": "https://procloud.info/#serviceProvider"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": "IA aplicada a procesos",
+        "url": "https://procloud.info/ia-aplicada-a-procesos.html"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://procloud.info/ia-aplicada-a-procesos.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿La IA aplicada es segura para mis datos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Diseñamos e implementamos soluciones que respetan el RGPD, asegurando que los datos sensibles de tu empresa no se compartan de forma pública."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es necesario tener conocimientos de programación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para nada. Nosotros nos encargamos de todo el desarrollo técnico e integraciones, entregando herramientas sencillas que tu equipo puede usar desde el primer día."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se tarda en ver resultados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los primeros flujos básicos de automatización y plantillas inteligentes suelen estar listos y aportando valor en pocas semanas tras la auditoría inicial."
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "@type": "Service",
-    "@id": "https://procloud.info/ia-aplicada-a-procesos.html#service",
-    "name": "IA aplicada a procesos",
-    "description": "Automatización de procesos diarios, análisis de correos, generación de resúmenes e informes mediante Inteligencia Artificial.",
-    "provider": {
-      "@id": "https://procloud.info/#serviceProvider"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "serviceType": "IA aplicada a procesos",
-    "url": "https://procloud.info/ia-aplicada-a-procesos.html"
-  },
-  {
-    "@type": "FAQPage",
-    "@id": "https://procloud.info/ia-aplicada-a-procesos.html#faq",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿La IA aplicada es segura para mis datos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Diseñamos e implementamos soluciones que respetan el RGPD, asegurando que los datos sensibles de tu empresa no se compartan de forma pública."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es necesario tener conocimientos de programación?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para nada. Nosotros nos encargamos de todo el desarrollo técnico e integraciones, entregando herramientas sencillas que tu equipo puede usar desde el primer día."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto tiempo se tarda en ver resultados?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Los primeros flujos básicos de automatización y plantillas inteligentes suelen estar listos y aportando valor en pocas semanas tras la auditoría inicial."
-        }
+        ]
       }
     ]
-  }
-]
   }
   </script>
   
@@ -269,15 +288,24 @@
   <main id="primary" class="site-main">
 
     <!-- HERO -->
-    
-  
+    <section class="pc-hero" aria-labelledby="seo-hero-title">
+      <div class="pc-container pc-hero-grid">
+        <div>
+          <div class="pc-headerline">IA SERVICES</div>
+          <h1 id="seo-hero-title">IA aplicada a procesos</h1>
+          <p class="pc-subheadline" style="font-size: 20px; font-weight: 600; color: var(--pc-cyan); margin-bottom: 20px;">Optimización de flujos de trabajo administrativos mediante Inteligencia Artificial práctica.</p>
+          <p>Analizamos tareas repetitivas y flujos de trabajo para aplicar la IA donde realmente aporta valor: automatización, resúmenes, documentos, correos, informes, atención al cliente y organización interna. Te ayudamos a transformar tu pyme haciéndola más productiva.</p>
+          <div class="pc-actions" style="margin-top: 30px;">
+            <a class="pc-btn pc-btn-primary" href="contacto.html">Contacta con nosotros</a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="./assets/images/hero-cloud-illustration.png" alt="Consultoría de IA aplicada a procesos administrativos | ProCloud" style="width: 100%; max-width: 380px; height: auto; border-radius: 20px;" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    
-  
-
-    
-  
-
+    <!-- WHAT INCLUDES -->
     <section class="pc-section pc-section-light" style="padding: 40px 0;">
       <div class="pc-container" style="max-width: 800px;">
         <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Casos de uso habituales</h2>
@@ -298,6 +326,61 @@
       </div>
     </section>
   
+    <!-- TABLA COMPARATIVA -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
+      <div class="pc-container" style="max-width: 800px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Procesos manuales vs IA aplicada a procesos</h2>
+        <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); background: var(--pc-white);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+            <thead>
+              <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Ámbito</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Procesos manuales</th>
+                <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">IA aplicada a procesos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Tareas repetitivas</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Entrada manual de datos, copia de información y tareas administrativas lentas.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Automatización inteligente que extrae datos de facturas o tickets sin errores.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Resúmenes</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Lectura completa de hilos de correo extensos o documentos largos que consume tiempo.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Generación instantánea de resúmenes de reuniones, audios, actas y contratos.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Documentos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Redacción y formato desde cero para propuestas, plantillas o comunicaciones.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Creación asistida de borradores de contratos y documentos a partir de bases de datos.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Correos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Redacción individualizada de respuestas a consultas frecuentes de clientes.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Generación ágil de respuestas profesionales personalizadas y clasificadas por tema.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Informes</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Recopilación manual de datos de diversas fuentes y maquetación tediosa.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Creación automatizada de informes visuales cruzando datos de múltiples ERPs.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Organización interna</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Dependencia de la memoria del personal para seguir flujos y arxivar documentos.</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500; color: var(--pc-navy);">Flujos de trabajo digitales automatizados y archivo estructurado inteligente.</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 600;">Tiempo de respuesta</td>
+                <td style="padding: 10px 12px; border-style: none; color: var(--pc-muted);">Horas o días dependiendo de la carga de trabajo y disponibilidad de personal.</td>
+                <td style="padding: 10px 12px; border-style: none; font-weight: 500; color: var(--pc-navy);">Segundos para análisis de datos y minutos para flujos de procesamiento.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
 <section class="pc-section" aria-labelledby="faq-title">
       <div class="pc-container" style="max-width: 800px;">
         <div class="pc-kicker">FAQ</div>
