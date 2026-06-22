@@ -92,156 +92,188 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#breadcrumb",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://procloud.info/en/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The importance of immutable backups against ransomware",
+          "item": "https://procloud.info/en/blog/immutable-backup-ransomware.html"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://procloud.info/#organization",
+      "name": "ProCloud",
+      "url": "https://procloud.info/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://procloud.info/assets/images/procloud-icon.png",
+        "caption": "ProCloud Logo"
+      },
+      "email": "jordi@procloud.info",
+
+      "telephone": "+34936941861",
+      "areaServed": "ES",
+      "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rial Pascual 27-29",
+        "postalCode": "08358",
+        "addressLocality": "Arenys de Munt",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://procloud.info/#serviceProvider",
+      "name": "ProCloud",
+      "image": "https://procloud.info/assets/images/procloud-icon.png",
+      "description": "Cloud services, secure access and IT support for SMEs.",
+      "email": "jordi@procloud.info",
+
+      "telephone": "+34936941861",
+      "url": "https://procloud.info/en/blog/immutable-backup-ransomware.html",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Spain"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "knowsAbout": [
+        "Cloud ERP",
+        "Sage cloud",
+        "SAP cloud",
+        "A3 cloud",
+        "Enterprise cloud",
+        "VPN and remote work",
+        "Zero Trust with Cloudflare",
+        "Microsoft 365",
+        "Google Workspace",
+        "AI applied to business processes",
+        "Backup and cybersecurity",
+        "IT support"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ProCloud Services Catalog",
         "itemListElement": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://procloud.info/en/index.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "The importance of immutable backups against ransomware",
-            "item": "https://procloud.info/en/blog/immutable-backup-ransomware.html"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cloud ERP",
+              "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
+              "offers": {
+                "@type": "Offer",
+                "price": "98.00",
+                "priceCurrency": "EUR"
+              }
+            }
           }
         ]
       },
-      {
-        "@type": "Organization",
-        "@id": "https://procloud.info/#organization",
-        "name": "ProCloud",
-        "url": "https://procloud.info/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://procloud.info/assets/images/procloud-icon.png",
-          "caption": "ProCloud Logo"
-        },
-        "email": "jordi@procloud.info",
-        "areaServed": "ES",
-        "description": "ProCloud offers cloud services, cloud ERP for Sage, SAP and A3, secure remote access, Microsoft 365, applied AI, backup, cybersecurity and IT support for companies.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rial Pascual 27-29",
-          "postalCode": "08358",
-          "addressLocality": "Arenys de Munt",
-          "addressRegion": "Barcelona",
-          "addressCountry": "ES"
-        }
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rial Pascual 27-29",
+        "postalCode": "08358",
+        "addressLocality": "Arenys de Munt",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://procloud.info/#serviceProvider",
-        "name": "ProCloud",
-        "image": "https://procloud.info/assets/images/procloud-icon.png",
-        "description": "Cloud services, secure access and IT support for SMEs.",
+      "serviceType": "IT support and cloud services"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#article",
+      "isPartOf": {
+        "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#webpage"
+      },
+      "headline": "The importance of immutable backups against ransomware",
+      "description": "Protect your business from ransomware with external, verified and immutable backups.",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://procloud.info/en/blog/immutable-backup-ransomware.html",
+      "datePublished": "2026-05-24T09:00:00+02:00",
+      "dateModified": "2026-05-24T09:00:00+02:00",
+      "author": {
+        "@type": "Person",
+        "name": "Jordi Navarro",
         "email": "jordi@procloud.info",
-        "url": "https://procloud.info/en/blog/immutable-backup-ransomware.html",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Spain"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        ],
+
+        "telephone": "+34936941861",
+        "jobTitle": "Specialist in cloud infrastructure and IT support",
         "knowsAbout": [
           "Cloud ERP",
-          "Sage cloud",
-          "SAP cloud",
-          "A3 cloud",
-          "Enterprise cloud",
-          "VPN and remote work",
-          "Zero Trust with Cloudflare",
+          "Sage",
+          "SAP",
+          "A3",
           "Microsoft 365",
-          "Google Workspace",
-          "AI applied to business processes",
-          "Backup and cybersecurity",
-          "IT support"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "ProCloud Services Catalog",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Cloud ERP",
-                "description": "Publishing and migrating ERP (Sage, SAP, A3) to the cloud starting from €98 per month.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "98.00",
-                  "priceCurrency": "EUR"
-                }
-              }
-            }
-          ]
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rial Pascual 27-29",
-          "postalCode": "08358",
-          "addressLocality": "Arenys de Munt",
-          "addressRegion": "Barcelona",
-          "addressCountry": "ES"
-        },
-        "serviceType": "IT support and cloud services"
+          "Cloudflare Zero Trust",
+          "VPN",
+          "Backup",
+          "Cybersecurity",
+          "AI applied to processes"
+        ]
       },
-      {
-        "@type": "BlogPosting",
-        "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#article",
-        "isPartOf": {
-          "@id": "https://procloud.info/en/blog/immutable-backup-ransomware.html#webpage"
-        },
-        "headline": "The importance of immutable backups against ransomware",
-        "description": "Protect your business from ransomware with external, verified and immutable backups.",
-        "inLanguage": "en",
-        "mainEntityOfPage": "https://procloud.info/en/blog/immutable-backup-ransomware.html",
-        "datePublished": "2026-05-24T09:00:00+02:00",
-        "dateModified": "2026-05-24T09:00:00+02:00",
-        "author": {
-          "@type": "Person",
-          "name": "Jordi Navarro",
-          "email": "jordi@procloud.info",
-          "jobTitle": "Specialist in cloud infrastructure and IT support",
-          "knowsAbout": [
-            "Cloud ERP",
-            "Sage",
-            "SAP",
-            "A3",
-            "Microsoft 365",
-            "Cloudflare Zero Trust",
-            "VPN",
-            "Backup",
-            "Cybersecurity",
-            "AI applied to processes"
-          ]
-        },
-        "publisher": {
-          "@id": "https://procloud.info/#organization"
-        },
-        "image": "https://procloud.info/assets/og/procloud-og.jpg",
-        "articleSection": "Backup & Cloud"
-      }
-    ]
-  }
+      "publisher": {
+        "@id": "https://procloud.info/#organization"
+      },
+      "image": "https://procloud.info/assets/og/procloud-og.jpg",
+      "articleSection": "Backup & Cloud",
+      "wordCount": 943
+    }
+  ]
+}
   </script>
+  
+<!-- Google tag (gtag.js) -->
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB886C5EYG"></script>
+
+  
+<script>
+
+  
+  window.dataLayer = window.dataLayer || [];
+
+  
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('js', new Date());
+
+
+  
+  gtag('config', 'G-YB886C5EYG');
+
+  
+</script>
+
   
 </head>
 <body class="pc-page">
@@ -338,33 +370,127 @@
       </div>
     </section>
   
-    <section class="pc-section pc-section-light" style="padding: 40px 0;">
+        <!-- CONTENIDO -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
       <div class="pc-container" style="max-width: 800px;">
-        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Common use cases</h2>
-        <div style="display: flex; flex-direction: column;">
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Professional firm with remote users</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Cloud ERP publishing to enable secure access from the office and remote work, with backups and technical support.</p>
+        <div class="pc-post-body" style="font-size: 18px; line-height: 1.8; color: var(--pc-navy);">
+          <p>Ransomware has become one of the greatest cyber threats to businesses of all sizes. In a typical attack, cybercriminals not only encrypt files on main computers and servers to demand a ransom, but they also actively seek out, delete, or alter local and network backups to prevent the company from restoring its data on its own.</p>
+          <p>For this reason, traditional backup strategies are no longer sufficient to guarantee business continuity. The solution lies in implementing data immutability.</p>
+
+          <h2>1. What is an immutable backup</h2>
+          <p>An immutable backup is a backup file that, once written, cannot be modified, overwritten, encrypted, or deleted by anyone during a predefined retention period. Even if an attacker gains access to the system with administrator credentials, they cannot alter this repository, as the lock is managed at an unbreakable physical or logical level (WORM: Write Once, Read Many). This guarantees that a clean, secure restore point is always available.</p>
+
+          <h2>2. Why traditional backups may not be enough</h2>
+          <p>Conventional backups have critical vulnerabilities when facing sophisticated ransomware attacks:</p>
+          <ul>
+            <li><strong>Backups on local drives and NAS:</strong> If they are permanently connected to the network, ransomware can spread and encrypt them at the same time as production servers.</li>
+            <li><strong>Lack of version control:</strong> If malware remains dormant for days, new encrypted backups can overwrite older clean backups.</li>
+            <li><strong>Unmonitored backups:</strong> Silent backup errors that go unnoticed prevent you from having a valid backup at the moment of disaster.</li>
+            <li><strong>Lack of restore testing:</strong> A backup that has not been tested periodically may fail when attempting to restore it, leaving the business without recovery options.</li>
+          </ul>
+
+          <h3 style="text-align: center; margin: 40px 0 20px; color: var(--pc-navy);">Traditional Backup vs Immutable Copy</h3>
+          <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 40px;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+              <thead>
+                <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Aspect</th>
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Traditional Backup</th>
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Immutable Copy (Anti-Ransomware)</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Ransomware resistance</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Vulnerable (ransomware can encrypt local backups)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">100% immune (write-once-read-many / WORM lock)</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Data modification</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Allowed (any admin or virus can delete backups)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Completely locked during the retention period</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Physical location</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Local tapes/disks (exposed to theft, fire, damages)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Secure cloud, encrypted and geographically distributed</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Automation</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Requires manual intervention (disk swap)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">100% automated, daily and constantly monitored</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Data verification</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Low frequency, restorations are rarely tested</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Automated verification and quick recovery tests</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">SME with an aging local server</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Replacement or complement of the local server through a managed cloud environment, protected remote access and included maintenance.</p>
-          </div>
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Company that needs to protect RDP</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Remote access protection using Zero Trust, Cloudflare Tunnel, Cloudflare Access, WARP and MFA, avoiding direct RDP exposure to the Internet.</p>
-          </div>
+
+          <h2>3. The 3-2-1 rule and the 3-2-1-1-0 strategy</h2>
+          <p>The well-known 3-2-1 backup rule has evolved to address today's threats. ProCloud's modern strategy is based on the <strong>3-2-1-1-0</strong> formula:</p>
+          <ul>
+            <li><strong>3 copies of data:</strong> The production copy and at least two additional backups.</li>
+            <li><strong>2 different media or locations:</strong> For example, fast local storage and a repository in the cloud.</li>
+            <li><strong>1 offsite copy:</strong> Stored externally (at our protected data center).</li>
+            <li><strong>1 immutable or isolated (offline) copy:</strong> Featuring active protection against deletion and encryption.</li>
+            <li><strong>0 verified errors:</strong> Through proactive monitoring and periodic automated restore tests.</li>
+          </ul>
+
+          <h2>4. Advantages of an immutable backup</h2>
+          <p>Implementing immutability in backup repositories offers key benefits for corporate security:</p>
+          <ul>
+            <li><strong>Protection against malicious deletion:</strong> No user, not even with superadministrator privileges, can delete the data before the end of the lock period.</li>
+            <li><strong>Total immunity to ransomware:</strong> Backup files cannot be modified or encrypted by any harmful software.</li>
+            <li><strong>Drastic reduction of attack impact:</strong> Guarantees that the company can be back online in a few hours without depending on ransom payments.</li>
+            <li><strong>Reliable history of previous versions:</strong> Allows recovering historical data without fear that it has been silently altered.</li>
+            <li><strong>Assured business continuity:</strong> Minimizes technical downtime for employees.</li>
+          </ul>
+
+          <h2>5. Local, cloud, and protected repositories</h2>
+          <p>A modern protection architecture combines the best of both worlds: fast local storage (for immediate restores of everyday files) and an immutable repository in the cloud protected by strict policies. This entire infrastructure must be supported by a continuous monitoring and alert system that detects anomalies or unusual file modification spikes.</p>
+
+          <h2>6. What needs to be protected</h2>
+          <p>The immutability strategy must be applied to all critical assets that run the business daily:</p>
+          <ul>
+            <li><strong>Complete servers and virtual machines:</strong> To quickly rebuild the entire infrastructure in case of physical or logical disaster.</li>
+            <li><strong>Databases and management applications:</strong> Which contain fiscal, billing, and customer data.</li>
+            <li><strong>Corporate ERP environments:</strong> Sage, SAP, or A3 configurations that cannot afford operational downtime.</li>
+            <li><strong>Network and firewall configurations:</strong> To raise perimeter and remote access services without losing days reconfiguring parameters.</li>
+            <li><strong>Administrative documentation and shared files.</strong></li>
+          </ul>
+
+          <h2>7. Microsoft 365 also needs backup</h2>
+          <p>It is a common mistake to think that because data is in the Microsoft 365 cloud (Exchange Online, SharePoint, OneDrive, or Teams), it is already protected against ransomware. Microsoft offers high availability and a temporary recycle bin, but not a historical backup or protection against massive accidental or malicious deletion. Having an external, immutable backup for Microsoft 365 is essential to comply with corporate security standards.</p>
+
+          <h2>8. Restore tests</h2>
+          <p>A backup is only truly useful if it has been proven that it can be successfully restored. Periodic tests must verify the integrity of data blocks, simulate the recovery of complete servers in isolated environments, and measure recovery times (RTO and RPO) to guarantee that the company will meet its business continuity objectives in a real incident.</p>
+
+          <h2>9. How ProCloud helps</h2>
+          <p>At ProCloud, we design, implement, and manage comprehensive immutable backup strategies tailored to your business:</p>
+          <ul>
+            <li>We configure immutable repositories both locally and in the cloud (based on technologies such as Veeam Cloud Connect).</li>
+            <li>We monitor the status of all backup jobs daily, resolving incidents proactively.</li>
+            <li>We perform periodic documented restore tests of files and servers.</li>
+            <li>We protect your ERP environments (Sage, SAP, A3) and Microsoft 365 data under the same unified immutability strategy.</li>
+          </ul>
+
+          <h2>10. Conclusion</h2>
+          <p>Ransomware has changed the rules of the game in cybersecurity. Today, the question is not if your company will suffer an attack attempt, but when it will happen and if you will be prepared. A backup strategy that incorporates immutability makes the difference between a quick return to activity or a severe shutdown with irreparable economic losses.</p>
         </div>
       </div>
     </section>
-  
+
 <section class="pc-section pc-section-light" aria-labelledby="cta-title">
       <div class="pc-container">
         <div class="pc-cta pc-cta-grid">
           <div>
             <h2 id="cta-title">Are your backups safe from Ransomware?</h2>
-            <p style="margin-bottom: 24px; color: var(--pc-muted); font-size: 16px;">Contact us and we will review if your backups are ready to withstand ransomware.</p>
+            <p style="margin-bottom: 24px; color: var(--pc-muted); font-size: 16px;">Contact us and we will review whether your backups are ready against ransomware.</p>
             <a class="pc-btn pc-btn-primary" href="../../en/contact.html">Review backups now</a>
+            <p style="margin-top: 16px; font-size: 15.5px; color: var(--pc-navy);">Call us: <a href="tel:+34936941861" style="font-weight: 600; color: var(--pc-blue); text-decoration: underline;">+34 936 941 861</a></p>
           </div>
           <div style="display: flex; justify-content: center;">
             <img src="../../assets/images/contact-it-modernization.png" alt="IT Modernization" class="pc-cta-illustration" loading="lazy" width="300" height="200">
@@ -405,6 +531,8 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <p>Email: <a href="mailto:jordi@procloud.info">jordi@procloud.info</a></p>
+
+          <p>Phone: <a href="tel:+34936941861">+34 936 941 861</a></p>
           <p>Service area: Spain</p>
           <p>Business hours: Monday to Friday, 9:00 - 18:00</p>
         </div>

@@ -92,156 +92,188 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#breadcrumb",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://procloud.info/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "La importancia de la copia inmutable contra el ransomware",
+          "item": "https://procloud.info/blog/copia-inmutable-ransomware.html"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://procloud.info/#organization",
+      "name": "ProCloud",
+      "url": "https://procloud.info/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://procloud.info/assets/images/procloud-icon.png",
+        "caption": "ProCloud Logo"
+      },
+      "email": "jordi@procloud.info",
+
+      "telephone": "+34936941861",
+      "areaServed": "ES",
+      "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rial Pascual 27-29",
+        "postalCode": "08358",
+        "addressLocality": "Arenys de Munt",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://procloud.info/#serviceProvider",
+      "name": "ProCloud",
+      "image": "https://procloud.info/assets/images/procloud-icon.png",
+      "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+      "email": "jordi@procloud.info",
+
+      "telephone": "+34936941861",
+      "url": "https://procloud.info/blog/copia-inmutable-ransomware.html",
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "knowsAbout": [
+        "ERP en la nube",
+        "Sage en la nube",
+        "SAP en la nube",
+        "A3 en la nube",
+        "Cloud empresarial",
+        "VPN y teletrabajo",
+        "Zero Trust con Cloudflare",
+        "Microsoft 365",
+        "Google Workspace",
+        "IA aplicada a procesos diarios",
+        "Backup y ciberseguridad",
+        "Soporte IT"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo de Servicios ProCloud",
         "itemListElement": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://procloud.info/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "La importancia de la copia inmutable contra el ransomware",
-            "item": "https://procloud.info/blog/copia-inmutable-ransomware.html"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ERP en la nube",
+              "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
+              "offers": {
+                "@type": "Offer",
+                "price": "98.00",
+                "priceCurrency": "EUR"
+              }
+            }
           }
         ]
       },
-      {
-        "@type": "Organization",
-        "@id": "https://procloud.info/#organization",
-        "name": "ProCloud",
-        "url": "https://procloud.info/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://procloud.info/assets/images/procloud-icon.png",
-          "caption": "ProCloud Logo"
-        },
-        "email": "jordi@procloud.info",
-        "areaServed": "ES",
-        "description": "ProCloud ofrece servicios cloud, ERP en la nube para Sage, SAP y A3, acceso remoto seguro, Microsoft 365, IA aplicada, backup, ciberseguridad y soporte IT para empresas.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rial Pascual 27-29",
-          "postalCode": "08358",
-          "addressLocality": "Arenys de Munt",
-          "addressRegion": "Barcelona",
-          "addressCountry": "ES"
-        }
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rial Pascual 27-29",
+        "postalCode": "08358",
+        "addressLocality": "Arenys de Munt",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://procloud.info/#serviceProvider",
-        "name": "ProCloud",
-        "image": "https://procloud.info/assets/images/procloud-icon.png",
-        "description": "Servicios cloud, acceso seguro y soporte técnico informático para pymes.",
+      "serviceType": "Soporte IT y servicios cloud"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#article",
+      "isPartOf": {
+        "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#webpage"
+      },
+      "headline": "La importancia de la copia inmutable contra el ransomware",
+      "description": "Protege tu empresa frente al ransomware con copias de seguridad externas, verificadas e inmutables.",
+      "inLanguage": "es",
+      "mainEntityOfPage": "https://procloud.info/blog/copia-inmutable-ransomware.html",
+      "datePublished": "2026-05-24T09:00:00+02:00",
+      "dateModified": "2026-05-24T09:00:00+02:00",
+      "author": {
+        "@type": "Person",
+        "name": "Jordi Navarro",
         "email": "jordi@procloud.info",
-        "url": "https://procloud.info/blog/copia-inmutable-ransomware.html",
-        "areaServed": {
-          "@type": "Country",
-          "name": "España"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        ],
+
+        "telephone": "+34936941861",
+        "jobTitle": "Especialista en infraestructura cloud y soporte IT",
         "knowsAbout": [
           "ERP en la nube",
-          "Sage en la nube",
-          "SAP en la nube",
-          "A3 en la nube",
-          "Cloud empresarial",
-          "VPN y teletrabajo",
-          "Zero Trust con Cloudflare",
+          "Sage",
+          "SAP",
+          "A3",
           "Microsoft 365",
-          "Google Workspace",
-          "IA aplicada a procesos diarios",
-          "Backup y ciberseguridad",
-          "Soporte IT"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Catálogo de Servicios ProCloud",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "ERP en la nube",
-                "description": "Servicio de publicación y migración de ERP (Sage, SAP, A3) al cloud desde 98€ al mes.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "98.00",
-                  "priceCurrency": "EUR"
-                }
-              }
-            }
-          ]
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rial Pascual 27-29",
-          "postalCode": "08358",
-          "addressLocality": "Arenys de Munt",
-          "addressRegion": "Barcelona",
-          "addressCountry": "ES"
-        },
-        "serviceType": "Soporte IT y servicios cloud"
+          "Cloudflare Zero Trust",
+          "VPN",
+          "Backup",
+          "Ciberseguridad",
+          "IA aplicada a procesos"
+        ]
       },
-      {
-        "@type": "BlogPosting",
-        "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#article",
-        "isPartOf": {
-          "@id": "https://procloud.info/blog/copia-inmutable-ransomware.html#webpage"
-        },
-        "headline": "La importancia de la copia inmutable contra el ransomware",
-        "description": "Protege tu empresa frente al ransomware con copias de seguridad externas, verificadas e inmutables.",
-        "inLanguage": "es",
-        "mainEntityOfPage": "https://procloud.info/blog/copia-inmutable-ransomware.html",
-        "datePublished": "2026-05-24T09:00:00+02:00",
-        "dateModified": "2026-05-24T09:00:00+02:00",
-        "author": {
-          "@type": "Person",
-          "name": "Jordi Navarro",
-          "email": "jordi@procloud.info",
-          "jobTitle": "Especialista en infraestructura cloud y soporte IT",
-          "knowsAbout": [
-            "ERP en la nube",
-            "Sage",
-            "SAP",
-            "A3",
-            "Microsoft 365",
-            "Cloudflare Zero Trust",
-            "VPN",
-            "Backup",
-            "Ciberseguridad",
-            "IA aplicada a procesos"
-          ]
-        },
-        "publisher": {
-          "@id": "https://procloud.info/#organization"
-        },
-        "image": "https://procloud.info/assets/og/procloud-og.jpg",
-        "articleSection": "Backup & Cloud"
-      }
-    ]
-  }
+      "publisher": {
+        "@id": "https://procloud.info/#organization"
+      },
+      "image": "https://procloud.info/assets/og/procloud-og.jpg",
+      "articleSection": "Backup & Cloud",
+      "wordCount": 1060
+    }
+  ]
+}
   </script>
+  
+<!-- Google tag (gtag.js) -->
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB886C5EYG"></script>
+
+  
+<script>
+
+  
+  window.dataLayer = window.dataLayer || [];
+
+  
+  function gtag(){dataLayer.push(arguments);}
+
+  
+  gtag('js', new Date());
+
+
+  
+  gtag('config', 'G-YB886C5EYG');
+
+  
+</script>
+
   
 </head>
 <body class="pc-page">
@@ -294,26 +326,119 @@
       </div>
     </section>
 
-    <section class="pc-section pc-section-light" style="padding: 40px 0;">
+        <!-- CONTENIDO -->
+    <section class="pc-section" style="background: var(--pc-white); padding: 60px 0;">
       <div class="pc-container" style="max-width: 800px;">
-        <h2 style="text-align: center; margin-bottom: 30px; color: var(--pc-navy);">Casos de uso habituales</h2>
-        <div style="display: flex; flex-direction: column;">
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Despacho profesional con usuarios remotos</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Publicación de ERP en la nube para permitir acceso seguro desde oficina y teletrabajo, con copias de seguridad y soporte técnico.</p>
+        <div class="pc-post-body" style="font-size: 18px; line-height: 1.8; color: var(--pc-navy);">
+          <p>El ransomware se ha convertido en una de las mayores amenazas para empresas de todos los tamaños. En un ataque típico, los ciberdelincuentes no solo cifran los archivos de los ordenadores y servidores principales para exigir un rescate, sino que también buscan, borran o alteran las copias de seguridad (backups) locales y en red para impedir que la empresa pueda restaurar sus datos por sí misma.</p>
+          <p>Por este motivo, las estrategias de copia tradicionales ya no son suficientes para garantizar la continuidad del negocio. La solución pasa por implementar la inmutabilidad de los datos.</p>
+
+          <h2>1. Qué es una copia inmutable</h2>
+          <p>Una copia de seguridad inmutable es un respaldo que, una vez escrito, no puede ser modificado, sobrescrito, cifrado ni eliminado por nadie durante un período de tiempo predefinido (retención). Incluso si un atacante consigue acceder al sistema con credenciales de administrador, no podrá alterar este repositorio, ya que el bloqueo se gestiona a nivel físico o lógico inquebrantable (WORM: Write Once, Read Many). Esto garantiza que siempre habrá un punto de restauración limpio y seguro.</p>
+
+          <h2>2. Por qué las copias tradicionales pueden no ser suficientes</h2>
+          <p>Las copias de seguridad convencionales presentan vulnerabilidades críticas frente a ataques sofisticados:</p>
+          <ul>
+            <li><strong>Copias en discos locales y NAS:</strong> Si están permanentemente conectados a la red, el ransomware puede propagarse y cifrarlos al mismo tiempo que los servidores de producción.</li>
+            <li><strong>Falta de control de versiones:</strong> Si el malware permanece inactivo durante días, las nuevas copias cifradas pueden sobrescribir las copias limpias más antiguas.</li>
+            <li><strong>Backups no monitorizados:</strong> Los errores silenciosos de copia que pasan desapercibidos impiden tener un respaldo válido en el momento del desastre.</li>
+            <li><strong>Falta de pruebas de restauración:</strong> Un backup que no se ha probado periódicamente puede fallar al intentar recuperarlo, dejando a la empresa sin opciones.</li>
+          </ul>
+
+          <h3 style="text-align: center; margin: 40px 0 20px; color: var(--pc-navy);">Copia tradicional vs Copia inmutable</h3>
+          <div style="overflow-x: auto; border: 1px solid var(--pc-mid); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 40px;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; color: var(--pc-navy);">
+              <thead>
+                <tr style="background: var(--pc-navy); color: var(--pc-white);">
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Aspecto</th>
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Copia tradicional</th>
+                  <th style="padding: 12px 15px; font-weight: 700; border-bottom: 2px solid var(--pc-mid);">Copia inmutable (Anti-Ransomware)</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Resistencia al ransomware</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Vulnerable (el malware puede cifrar o borrar copias conectadas)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">100% inmune (bloqueo WORM inalterable durante la retención)</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Modificación de datos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Permitida (un administrador o virus puede eliminar históricos)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Completamente bloqueada (imposible alterar o borrar)</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Ubicación física</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Discos locales o cintas (vulnerables a robo, fuego o fallos)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Servidores cloud seguros, cifrados y distribuidos geográficamente</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Automatización</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Suele requerir intervención manual (rotar discos, verificar cintas)</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">100% automática, diaria y monitorizada en tiempo real</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 600;">Verificación de datos</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); color: var(--pc-muted);">Baja frecuencia, rara vez se prueban las restauraciones</td>
+                <td style="padding: 10px 12px; border-bottom: 1px solid var(--pc-mid); font-weight: 500;">Verificación automática y pruebas de recuperación integradas</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Pyme con servidor local antiguo</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Sustitución o complemento del servidor local mediante entorno cloud gestionado, acceso remoto protegido y mantenimiento incluido.</p>
-          </div>
-          <div style="padding: 20px; border-left: 4px solid var(--pc-cyan); background: var(--pc-light); border-radius: 0 8px 8px 0; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-            <h3 style="margin-top: 0; color: var(--pc-navy); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Empresa que necesita proteger RDP</h3>
-            <p style="margin-bottom: 0; color: var(--pc-muted); font-size: 15px; line-height: 1.6;">Protección del acceso remoto mediante Zero Trust, Cloudflare Tunnel, Cloudflare Access, WARP y MFA, evitando exponer RDP directamente a Internet.</p>
-          </div>
+
+          <h2>3. Regla 3-2-1 y estrategia 3-2-1-1-0</h2>
+          <p>La conocida regla 3-2-1 del backup ha evolucionado para hacer frente a las amenazas actuales. La estrategia moderna de ProCloud se basa en la fórmula <strong>3-2-1-1-0</strong>:</p>
+          <ul>
+            <li><strong>3 copias de los datos:</strong> La copia de producción y al menos dos respaldos adicionales.</li>
+            <li><strong>2 soportes o ubicaciones diferentes:</strong> Por ejemplo, un almacenamiento local rápido y un repositorio en el cloud.</li>
+            <li><strong>1 copia fuera de la oficina:</strong> Almacenada externamente (en nuestro centro de datos protegido).</li>
+            <li><strong>1 copia inmutable o aislada (offline):</strong> Con protección activa frente a borrado y cifrado.</li>
+            <li><strong>0 errores verificados:</strong> Mediante monitorización proactiva y pruebas periódicas de restauración automatizadas.</li>
+          </ul>
+
+          <h2>4. Ventajas de una copia inmutable</h2>
+          <p>Implementar inmutabilidad en los repositorios de copia ofrece beneficios clave para la seguridad corporativa:</p>
+          <ul>
+            <li><strong>Protección frente a borrado malicioso:</strong> Ningún usuario, ni siquiera con permisos de superadministrador, puede borrar los datos antes del fin del periodo de bloqueo.</li>
+            <li><strong>Inmunidad total al ransomware:</strong> Los archivos de backup no pueden ser modificados ni cifrados por ningún software dañino.</li>
+            <li><strong>Reducción drástica del impacto del ataque:</strong> Garantiza que la empresa pueda volver a estar operativa en pocas horas sin depender del pago de rescates.</li>
+            <li><strong>Historial fiable de versiones anteriores:</strong> Permite recuperar datos históricos sin temor a que hayan sido alterados de forma silenciosa.</li>
+            <li><strong>Continuidad del negocio asegurada:</strong> Minimiza el tiempo de inactividad técnica de los empleados.</li>
+          </ul>
+
+          <h2>5. Copias locales, cloud y repositorios protegidos</h2>
+          <p>Una arquitectura de protección moderna combina lo mejor de ambos mundos: un almacenamiento local rápido (para restauraciones inmediatas de archivos cotidianos) y un repositorio inmutable en el cloud protegido mediante políticas estrictas. Toda esta infraestructura debe estar respaldada por un sistema continuo de monitorización y alertas que detecte anomalías o picos inusuales de modificación de archivos.</p>
+
+          <h2>6. Qué hay que proteger</h2>
+          <p>La estrategia de inmutabilidad debe aplicarse a todos los activos críticos que hacen funcionar la empresa a diario:</p>
+          <ul>
+            <li><strong>Servidores completos y máquinas virtuales:</strong> Para reconstruir toda la infraestructura rápidamente en caso de desastre físico o lógico.</li>
+            <li><strong>Bases de datos y aplicaciones de gestión:</strong> Que contienen la información fiscal, facturación y clientes.</li>
+            <li><strong>Entornos ERP corporativos:</strong> Publicaciones de Sage, SAP o A3 que no pueden permitirse paradas operativas.</li>
+            <li><strong>Configuraciones de red y firewalls:</strong> Para levantar los servicios perimetrales y de acceso remoto sin perder días reconfigurando parámetros.</li>
+            <li><strong>Documentación administrativa y expedientes compartidos.</strong></li>
+          </ul>
+
+          <h2>7. Microsoft 365 también necesita copia</h2>
+          <p>Es un error común pensar que por tener los datos en la nube de Microsoft 365 (Exchange Online, SharePoint, OneDrive o Teams) ya están protegidos contra el ransomware. Microsoft ofrece alta disponibilidad y una papelera de reciclaje temporal, pero no un backup histórico ni protección contra borrado accidental o malicioso masivo. Contar con un backup externo e inmutable para Microsoft 365 es imprescindible para cumplir con la seguridad corporativa.</p>
+
+          <h2>8. Pruebas de restauración</h2>
+          <p>Un backup solo es realmente útil si se ha demostrado que se puede restaurar con éxito. Las pruebas periódicas deben verificar la integridad de los bloques de datos, simular la recuperación de servidores completos en entornos aislados y medir los tiempos de recuperación (RTO y RPO) para garantizar que la empresa cumplirá con sus objetivos de continuidad del negocio ante un incidente real.</p>
+
+          <h2>9. Cómo ayuda ProCloud</h2>
+          <p>En ProCloud diseñamos, implementamos y gestionamos estrategias integrales de backup inmutable adaptadas a tu negocio:</p>
+          <ul>
+            <li>Configuramos repositorios inmutables tanto locales como en el cloud (basados en tecnologías como Veeam Cloud Connect).</li>
+            <li>Monitorizamos diariamente el estado de todos los trabajos de copia, resolviendo incidencias de forma proactiva.</li>
+            <li>Realizamos pruebas periódicas documentadas de restauración de archivos y servidores.</li>
+            <li>Protegemos tus entornos ERP (Sage, SAP, A3) y los datos de Microsoft 365 bajo la misma estrategia unificada de inmutabilidad.</li>
+          </ul>
+
+          <h2>10. Conclusión</h2>
+          <p>El ransomware ha cambiado las reglas de juego en la ciberseguridad. Hoy en día, la pregunta no es si tu empresa sufrirá un intento de ataque, sino cuándo ocurrirá y si estarás preparado. Una estrategia de copias de seguridad que incorpore la inmutabilidad marca la diferencia entre una rápida vuelta a la actividad o una parada grave con pérdidas económicas irreparables.</p>
         </div>
       </div>
     </section>
-  
+
 <section class="pc-section pc-section-light" aria-labelledby="cta-title">
       <div class="pc-container">
         <div class="pc-cta pc-cta-grid">
@@ -321,6 +446,7 @@
             <h2 id="cta-title">¿Están tus copias a salvo de Ransomware?</h2>
             <p style="margin-bottom: 24px; color: var(--pc-muted); font-size: 16px;">Contacta con nosotros y revisamos si tus copias de seguridad están preparadas frente a ransomware.</p>
             <a class="pc-btn pc-btn-primary" href="../contacto.html">Revisar backups ahora</a>
+            <p style="margin-top: 16px; font-size: 15.5px; color: var(--pc-navy);">Llámanos: <a href="tel:+34936941861" style="font-weight: 600; color: var(--pc-blue); text-decoration: underline;">+34 936 941 861</a></p>
           </div>
           <div style="display: flex; justify-content: center;">
             <img src="../assets/images/contact-it-modernization.png" alt="IT Modernization" class="pc-cta-illustration" loading="lazy" width="300" height="200">
@@ -361,6 +487,8 @@
         <div class="footer-col">
           <h4>Contacto</h4>
           <p>Email: <a href="mailto:jordi@procloud.info">jordi@procloud.info</a></p>
+
+          <p>Teléfono: <a href="tel:+34936941861">+34 936 941 861</a></p>
           <p>Área de servicio: España</p>
           <p>Horario de atención: Lunes a viernes, 9:00 - 18:00</p>
         </div>
