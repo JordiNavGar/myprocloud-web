@@ -1,7 +1,7 @@
 # ProCloud (English Version)
 
 > [!NOTE]
-> **Other languages**: [Español (Principal)](https://procloud.info/llms.txt) | [Català](https://procloud.info/llms-ca.txt)
+> **Other languages**: [Español (Principal)](https://www.procloud.info/llms.txt) | [Català](https://www.procloud.info/llms-ca.txt)
 
 Cloud solutions, secure remote access, and IT support for businesses. ProCloud helps SMEs, law firms, clinics, and multi-site companies work securely from anywhere.
 
@@ -38,8 +38,8 @@ This service is designed for companies that want to start using AI in a practica
 
 ## Site Structure
 
-* [Home](https://procloud.info/en/index.html) - Introduction page for cloud solutions, secure access, and IT support.
-* [About Us](https://procloud.info/en/about.html) - Who we are, values, and ProCloud's track record.
-* [Cloud ERP](https://procloud.info/en/cloud-erp.html) - Sage, SAP, and A3 cloud publishing, security and support.
-* [Blog](https://procloud.info/en/blog.html) - Articles about cloud tech, computer security, and productivity.
-* [Contact](https://procloud.info/en/contact.html) - Contact form and customer support information.
+* [Home](https://www.procloud.info/en/index.html) - Introduction page for cloud solutions, secure access, and IT support.
+* [About Us](https://www.procloud.info/en/about.html) - Who we are, values, and ProCloud's track record.
+* [Cloud ERP](https://www.procloud.info/en/cloud-erp.html) - Sage, SAP, and A3 cloud publishing, security and support.
+* [Blog](https://www.procloud.info/en/blog.html) - Articles about cloud tech, computer security, and productivity.
+* [Contact](https://www.procloud.info/en/contact.html) - Contact form and customer support information.

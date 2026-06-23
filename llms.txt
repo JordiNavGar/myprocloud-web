@@ -1,7 +1,7 @@
 # ProCloud
 
 > [!NOTE]
-> **Otros idiomas / Other languages**: [Català](https://procloud.info/llms-ca.txt) | [English](https://procloud.info/llms-en.txt)
+> **Otros idiomas / Other languages**: [Català](https://www.procloud.info/llms-ca.txt) | [English](https://www.procloud.info/llms-en.txt)
 
 Soluciones cloud, acceso remoto seguro y soporte IT para empresas. ProCloud ayuda a pymes, despachos, clínicas y empresas multisede a trabajar de forma segura desde cualquier lugar.
 
@@ -38,8 +38,8 @@ Este servicio está pensado para empresas que quieren empezar a usar la IA de fo
 
 ## Estructura del Sitio
 
-* [Inicio](https://procloud.info/index.html) - Página de presentación de soluciones cloud, acceso seguro y soporte IT.
-* [Acerca de](https://procloud.info/acerca-de.html) - Quiénes somos, valores y trayectoria de ProCloud.
-* [ERP en la nube](https://procloud.info/erp-en-la-nube.html) - Publicación de Sage, SAP y A3 en cloud, seguridad y soporte.
-* [Blog](https://procloud.info/blog.html) - Artículos sobre tecnología cloud, seguridad informática y productividad.
-* [Contacto](https://procloud.info/contacto.html) - Formulario de contacto y datos de soporte para clientes.
+* [Inicio](https://www.procloud.info/index.html) - Página de presentación de soluciones cloud, acceso seguro y soporte IT.
+* [Acerca de](https://www.procloud.info/acerca-de.html) - Quiénes somos, valores y trayectoria de ProCloud.
+* [ERP en la nube](https://www.procloud.info/erp-en-la-nube.html) - Publicación de Sage, SAP y A3 en cloud, seguridad y soporte.
+* [Blog](https://www.procloud.info/blog.html) - Artículos sobre tecnología cloud, seguridad informática y productividad.
+* [Contacto](https://www.procloud.info/contacto.html) - Formulario de contacto y datos de soporte para clientes.

@@ -1,7 +1,7 @@
 # ProCloud (Versió en Català)
 
 > [!NOTE]
-> **Altres idiomes / Other languages**: [Español (Principal)](https://procloud.info/llms.txt) | [English](https://procloud.info/llms-en.txt)
+> **Altres idiomes / Other languages**: [Español (Principal)](https://www.procloud.info/llms.txt) | [English](https://www.procloud.info/llms-en.txt)
 
 Solucions cloud, accés remot segur i suport IT per a empreses. ProCloud ajuda a pimes, despatxos, clíniques i empreses multiseu a treballar de forma segura des de qualsevol lloc.
 
@@ -38,8 +38,8 @@ Aquest servei està pensat per a empreses que volen començar a utilitzar la IA 
 
 ## Estructura del Lloc
 
-* [Inici](https://procloud.info/ca/index.html) - Pàgina de presentació de solucions cloud, accés segur i suport IT.
-* [Qui som](https://procloud.info/ca/qui-som.html) - Qui som, valors i trajectòria de ProCloud.
-* [ERP al núvol](https://procloud.info/ca/erp-al-nuvol.html) - Publicació de Sage, SAP i A3 al núvol, seguretat i suport.
-* [Blog](https://procloud.info/ca/blog.html) - Articles sobre tecnologia cloud, seguretat informàtica i productivitat.
-* [Contacte](https://procloud.info/ca/contacte.html) - Formulari de contacte i dades de suport per a clients.
+* [Inici](https://www.procloud.info/ca/index.html) - Pàgina de presentació de solucions cloud, accés segur i suport IT.
+* [Qui som](https://www.procloud.info/ca/qui-som.html) - Qui som, valors i trajectòria de ProCloud.
+* [ERP al núvol](https://www.procloud.info/ca/erp-al-nuvol.html) - Publicació de Sage, SAP i A3 al núvol, seguretat i suport.
+* [Blog](https://www.procloud.info/ca/blog.html) - Articles sobre tecnologia cloud, seguretat informàtica i productivitat.
+* [Contacte](https://www.procloud.info/ca/contacte.html) - Formulari de contacte i dades de suport per a clients.

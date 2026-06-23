@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://procloud.info/sitemap.xml
+Sitemap: https://www.procloud.info/sitemap.xml
