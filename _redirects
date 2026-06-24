@@ -1,0 +1,80 @@
+# 1. Redirect non-www to www
+https://procloud.info/* https://www.procloud.info/:splat 301
+
+# 2. Redirect root index to canonical home
+/index https://www.procloud.info/ 301
+/index.html https://www.procloud.info/ 301
+
+# 3. Redirect language index directories
+/ca https://www.procloud.info/ca/index.html 301
+/ca/ https://www.procloud.info/ca/index.html 301
+/en https://www.procloud.info/en/index.html 301
+/en/ https://www.procloud.info/en/index.html 301
+
+# 4. Redirect extensionless internal pages to their .html counterpart
+/a3-en-la-nube https://www.procloud.info/a3-en-la-nube.html 301
+/acerca-de https://www.procloud.info/acerca-de.html 301
+/aviso-legal https://www.procloud.info/aviso-legal.html 301
+/backup-ciberseguridad https://www.procloud.info/backup-ciberseguridad.html 301
+/blog/asegurar-acceso-rdp-servidores https://www.procloud.info/blog/asegurar-acceso-rdp-servidores.html 301
+/blog/copia-inmutable-ransomware https://www.procloud.info/blog/copia-inmutable-ransomware.html 301
+/blog/microsoft-365-despachos-teams-sharepoint-exchange https://www.procloud.info/blog/microsoft-365-despachos-teams-sharepoint-exchange.html 301
+/blog https://www.procloud.info/blog.html 301
+/ca/a3-al-nuvol https://www.procloud.info/ca/a3-al-nuvol.html 301
+/ca/avis-legal https://www.procloud.info/ca/avis-legal.html 301
+/ca/backup-ciberseguretat https://www.procloud.info/ca/backup-ciberseguretat.html 301
+/ca/blog/assegurar-acces-rdp-servidors https://www.procloud.info/ca/blog/assegurar-acces-rdp-servidors.html 301
+/ca/blog/copia-immutable-ransomware https://www.procloud.info/ca/blog/copia-immutable-ransomware.html 301
+/ca/blog/microsoft-365-despatxos-teams-sharepoint-exchange https://www.procloud.info/ca/blog/microsoft-365-despatxos-teams-sharepoint-exchange.html 301
+/ca/blog https://www.procloud.info/ca/blog.html 301
+/ca/contacte https://www.procloud.info/ca/contacte.html 301
+/ca/erp-al-nuvol https://www.procloud.info/ca/erp-al-nuvol.html 301
+/ca/google-workspace-empreses https://www.procloud.info/ca/google-workspace-empreses.html 301
+/ca/ia-aplicada-a-processos https://www.procloud.info/ca/ia-aplicada-a-processos.html 301
+/ca/index https://www.procloud.info/ca/index.html 301
+/ca/microsoft-365-empreses https://www.procloud.info/ca/microsoft-365-empreses.html 301
+/ca/politica-cookies https://www.procloud.info/ca/politica-cookies.html 301
+/ca/politica-privacitat https://www.procloud.info/ca/politica-privacitat.html 301
+/ca/qui-som https://www.procloud.info/ca/qui-som.html 301
+/ca/sage-al-nuvol https://www.procloud.info/ca/sage-al-nuvol.html 301
+/ca/sap-al-nuvol https://www.procloud.info/ca/sap-al-nuvol.html 301
+/ca/serveis-cloud https://www.procloud.info/ca/serveis-cloud.html 301
+/ca/vpn-teletreball https://www.procloud.info/ca/vpn-teletreball.html 301
+/contacto https://www.procloud.info/contacto.html 301
+/en/a3-cloud https://www.procloud.info/en/a3-cloud.html 301
+/en/about https://www.procloud.info/en/about.html 301
+/en/ai-business-processes https://www.procloud.info/en/ai-business-processes.html 301
+/en/backup-cybersecurity https://www.procloud.info/en/backup-cybersecurity.html 301
+/en/blog/immutable-backup-ransomware https://www.procloud.info/en/blog/immutable-backup-ransomware.html 301
+/en/blog/microsoft-365-firms-teams-sharepoint-exchange https://www.procloud.info/en/blog/microsoft-365-firms-teams-sharepoint-exchange.html 301
+/en/blog/secure-rdp-access-servers https://www.procloud.info/en/blog/secure-rdp-access-servers.html 301
+/en/blog https://www.procloud.info/en/blog.html 301
+/en/cloud-erp https://www.procloud.info/en/cloud-erp.html 301
+/en/cloud-services https://www.procloud.info/en/cloud-services.html 301
+/en/contact https://www.procloud.info/en/contact.html 301
+/en/cookie-policy https://www.procloud.info/en/cookie-policy.html 301
+/en/google-workspace-business https://www.procloud.info/en/google-workspace-business.html 301
+/en/index https://www.procloud.info/en/index.html 301
+/en/legal-notice https://www.procloud.info/en/legal-notice.html 301
+/en/microsoft-365-business https://www.procloud.info/en/microsoft-365-business.html 301
+/en/privacy-policy https://www.procloud.info/en/privacy-policy.html 301
+/en/sage-cloud https://www.procloud.info/en/sage-cloud.html 301
+/en/sap-cloud https://www.procloud.info/en/sap-cloud.html 301
+/en/vpn-remote-work https://www.procloud.info/en/vpn-remote-work.html 301
+/erp-en-la-nube https://www.procloud.info/erp-en-la-nube.html 301
+/esquema_y_memoria https://www.procloud.info/esquema_y_memoria.html 301
+/google-workspace-empresas https://www.procloud.info/google-workspace-empresas.html 301
+/ia-aplicada-a-procesos https://www.procloud.info/ia-aplicada-a-procesos.html 301
+/microsoft-365-empresas https://www.procloud.info/microsoft-365-empresas.html 301
+/ofertas https://www.procloud.info/ofertas.html 301
+/politica-cookies https://www.procloud.info/politica-cookies.html 301
+/politica-privacidad https://www.procloud.info/politica-privacidad.html 301
+/sage-en-la-nube https://www.procloud.info/sage-en-la-nube.html 301
+/sap-en-la-nube https://www.procloud.info/sap-en-la-nube.html 301
+/servicios-cloud https://www.procloud.info/servicios-cloud.html 301
+/vpn-teletrabajo https://www.procloud.info/vpn-teletrabajo.html 301
+
+# 5. Redirect confirmation pages
+/solicitud-enviada https://www.procloud.info/solicitud-enviada.html 301
+/ca/sollicitud-enviada https://www.procloud.info/ca/sollicitud-enviada.html 301
+/en/request-sent https://www.procloud.info/en/request-sent.html 301
