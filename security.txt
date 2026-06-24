@@ -1,0 +1,4 @@
+Contact: mailto:info@procloud.info
+Expires: 2027-06-24T00:00:00.000Z
+Preferred-Languages: es, ca, en
+Canonical: https://www.procloud.info/.well-known/security.txt
